@@ -1,0 +1,2906 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full" id="htmlRoot">
+<head id="headRoot">
+    <meta charset="UTF-8" id="metaCharset">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" id="metaViewport">
+    <title id="pageTitle">SubPhrase Master RU-EN</title>
+    <script src="https://cdn.tailwindcss.com" id="scriptTailwind"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" id="linkFontPreconnect1">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin id="linkFontPreconnect2">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" id="linkGoogleFonts">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" id="linkFontAwesome">
+    
+    <script id="scriptTailwindConfig">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fef2f2',
+                            100: '#ffe1e1',
+                            200: '#fca5a5',
+                            500: '#f43f5e',
+                            600: '#e11d48',
+                            700: '#be123c',
+                            800: '#9f1239',
+                            900: '#881337',
+                        }
+                    },
+                    animation: {
+                        'pop-in': 'popIn 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
+                        'pulse-glow': 'pulseGlow 2s infinite',
+                    },
+                    keyframes: {
+                        popIn: {
+                            '0%': { transform: 'scale(0.96)', opacity: '0' },
+                            '100%': { transform: 'scale(1)', opacity: '1' }
+                        },
+                        pulseGlow: {
+                            '0%, 100%': { opacity: '1' },
+                            '50%': { opacity: '0.6' }
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+    
+    <style id="styleCustomMain">
+        html, body {
+            height: 100%;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        h1, h2, h3, h4, .font-display {
+            font-family: 'Outfit', sans-serif;
+        }
+        
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.05);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(225, 29, 72, 0.4);
+            border-radius: 4px;
+        }
+
+        #effectsCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 100;
+            will-change: transform;
+        }
+
+        /* GPU-Friendly Theme 1: Red White Glass */
+        body[data-theme="redwhite"] {
+            background-color: #f8fafc;
+            background-image: radial-gradient(circle at 10% 10%, rgba(244, 63, 94, 0.08) 0%, transparent 40%),
+                              linear-gradient(135deg, #fff5f5 0%, #f8fafc 100%);
+            color: #0f172a;
+        }
+        body[data-theme="redwhite"] .theme-header {
+            background-color: rgba(255, 255, 255, 0.96);
+            border-color: rgba(244, 63, 94, 0.25);
+            box-shadow: 0 4px 15px -5px rgba(225, 29, 72, 0.08);
+        }
+        body[data-theme="redwhite"] .glass-panel {
+            background: rgba(255, 255, 255, 0.96);
+            border: 1px solid rgba(244, 63, 94, 0.25);
+            box-shadow: 0 10px 30px -10px rgba(225, 29, 72, 0.1);
+            color: #0f172a;
+        }
+        body[data-theme="redwhite"] .glass-subpanel {
+            background: rgba(255, 241, 242, 0.35);
+            border: 1px solid rgba(253, 164, 175, 0.6);
+            color: #0f172a;
+        }
+        body[data-theme="redwhite"] .text-sub {
+            color: #9f1239;
+        }
+        body[data-theme="redwhite"] .theme-modal {
+            background: #ffffff !important;
+            border: 1px solid rgba(244, 63, 94, 0.3) !important;
+            color: #0f172a !important;
+        }
+        body[data-theme="redwhite"] input:not([type="range"]),
+        body[data-theme="redwhite"] textarea,
+        body[data-theme="redwhite"] select {
+            background-color: #ffffff !important;
+            color: #881337 !important;
+            border-color: #f43f5e !important;
+            box-shadow: 0 2px 8px rgba(244, 63, 94, 0.1) !important;
+        }
+        body[data-theme="redwhite"] input::placeholder,
+        body[data-theme="redwhite"] textarea::placeholder {
+            color: #f43f5e !important;
+            opacity: 0.65;
+        }
+
+        /* GPU-Friendly Theme 2: Blue Sky */
+        body[data-theme="bluesky"] {
+            background-color: #f0f9ff;
+            background-image: radial-gradient(circle at 15% 15%, rgba(56, 189, 248, 0.12) 0%, transparent 40%),
+                              linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
+            color: #03283e;
+        }
+        body[data-theme="bluesky"] .theme-header {
+            background-color: rgba(255, 255, 255, 0.96);
+            border-color: rgba(56, 189, 248, 0.35);
+            box-shadow: 0 4px 15px -5px rgba(14, 165, 233, 0.1);
+        }
+        body[data-theme="bluesky"] .glass-panel {
+            background: rgba(255, 255, 255, 0.96);
+            border: 1px solid rgba(56, 189, 248, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(14, 165, 233, 0.12);
+            color: #03283e;
+        }
+        body[data-theme="bluesky"] .glass-subpanel {
+            background: rgba(224, 242, 254, 0.92);
+            border: 1px solid rgba(125, 211, 252, 0.7);
+            color: #03283e;
+        }
+        body[data-theme="bluesky"] .text-sub {
+            color: #0369a1;
+        }
+        body[data-theme="bluesky"] .theme-modal {
+            background: #ffffff !important;
+            border: 1px solid rgba(56, 189, 248, 0.4) !important;
+            color: #03283e !important;
+        }
+        body[data-theme="bluesky"] input:not([type="range"]),
+        body[data-theme="bluesky"] textarea,
+        body[data-theme="bluesky"] select {
+            background-color: #ffffff !important;
+            color: #0369a1 !important;
+            border-color: #0284c7 !important;
+            box-shadow: 0 2px 8px rgba(14, 165, 233, 0.1) !important;
+        }
+        body[data-theme="bluesky"] input::placeholder,
+        body[data-theme="bluesky"] textarea::placeholder {
+            color: #0284c7 !important;
+            opacity: 0.65;
+        }
+
+        /* GPU-Friendly Theme 3: Dark Batman */
+        body[data-theme="batman"] {
+            background-color: #09090b;
+            color: #f4f4f5;
+        }
+        body[data-theme="batman"] .theme-header {
+            background-color: rgba(18, 18, 22, 0.95);
+            border-color: rgba(250, 204, 21, 0.25);
+        }
+        body[data-theme="batman"] .glass-panel {
+            background: rgba(18, 18, 22, 0.92);
+            border: 1px solid rgba(250, 204, 21, 0.2);
+            box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.8);
+            color: #f4f4f5;
+        }
+        body[data-theme="batman"] .glass-subpanel {
+            background: rgba(27, 27, 31, 0.92);
+            border: 1px solid rgba(250, 204, 21, 0.18);
+            color: #f4f4f5;
+        }
+        body[data-theme="batman"] .text-sub {
+            color: #e4e4e7;
+        }
+        body[data-theme="batman"] .theme-modal {
+            background: #121216 !important;
+            border: 1px solid rgba(250, 204, 21, 0.25) !important;
+            color: #f4f4f5 !important;
+        }
+        body[data-theme="batman"] input:not([type="range"]),
+        body[data-theme="batman"] textarea,
+        body[data-theme="batman"] select {
+            background-color: #18181b !important;
+            color: #f4f4f5 !important;
+            border-color: rgba(250, 204, 21, 0.4) !important;
+        }
+
+        .theme-circle-btn {
+            width: 1.6rem;
+            height: 1.6rem;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .theme-circle-btn.active-theme {
+            box-shadow: 0 0 0 2px #f43f5e, 0 0 8px rgba(244, 63, 94, 0.4);
+            transform: scale(1.1);
+        }
+
+        /* Video view modes: normal player or video-as-background. */
+        #divExerciseCardPanel { position: relative; isolation: isolate; }
+        #divExerciseCardPanel > *:not(#videoPlayerWrapper) { position: relative; z-index: 10; }
+        /* Background view uses the full available page width rather than the normal
+           narrow exercise-card column. Normal view retains the original max-width. */
+        #mainContentContainer:has(#divExerciseCardPanel.video-background-active) {
+            width: 100% !important;
+            max-width: none !important;
+        }
+        #divMainInnerWrapper:has(#divExerciseCardPanel.video-background-active),
+        #divExerciseCardPanel.video-background-active {
+            width: 100% !important;
+            max-width: none !important;
+        }
+        #divExerciseCardPanel.video-background-active #block2MediaContainer.video-background-container,
+        #divExerciseCardPanel.video-background-active #videoPlayerWrapper.video-background-mode {
+            width: 100% !important;
+        }
+
+        /* Content blocks become transparent only while Background View is active */
+        #divExerciseCardPanel.video-background-active > *:not(#videoPlayerWrapper) {
+            background-color: rgba(255,255,255,0.4) !important;
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+        }
+        body[data-theme="bluesky"] #divExerciseCardPanel.video-background-active > *:not(#videoPlayerWrapper),
+        body[data-theme="batman"] #divExerciseCardPanel.video-background-active > *:not(#videoPlayerWrapper) {
+            background-color: rgba(15,23,42,0.45) !important;
+        }
+        /* In background mode, take the whole media container out of document flow.
+           The previous version only positioned the inner player, leaving its parent
+           stacking above it and hiding the video behind the subtitle panel. */
+        #block2MediaContainer.video-background-container {
+            position: absolute !important;
+            inset: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            margin: 0 !important;
+            z-index: 0 !important;
+            pointer-events: none !important;
+        }
+        #block2MediaContainer.video-background-container #videoPlayerWrapper.video-background-mode {
+            position: absolute !important;
+            inset: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            max-height: none !important;
+            aspect-ratio: auto !important;
+            margin: 0 !important;
+            z-index: 0 !important;
+            border-radius: 1.5rem !important;
+            overflow: hidden !important;
+            pointer-events: none !important;
+        }
+        #videoPlayerWrapper.video-background-mode #mediaPlayer {
+            width: 100% !important; height: 100% !important; object-fit: cover !important; pointer-events: auto;
+        }
+        #videoPlayerWrapper.video-background-mode #imgLinkedPicture {
+            width: 100% !important; height: 100% !important; object-fit: cover !important;
+        }
+        #divExerciseCardPanel.video-background-active #block3SubtitlesContainer {
+            background: rgba(255,255,255,0.38) !important;
+            border-color: rgba(255,255,255,0.48) !important;
+            backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
+        }
+        body[data-theme="bluesky"] #divExerciseCardPanel.video-background-active #block3SubtitlesContainer,
+        body[data-theme="batman"] #divExerciseCardPanel.video-background-active #block3SubtitlesContainer {
+            background: rgba(15,23,42,0.42) !important;
+            border-color: rgba(148,163,184,0.35) !important;
+        }
+        #videoPlayerWrapper.video-background-mode::after {
+            content: ''; position: absolute; inset: 0; z-index: 2; pointer-events: none;
+            background: rgba(0,0,0,0.35);
+        }
+
+        /* Interactive Subtitle Words */
+        .sub-word-token {
+            display: inline-block;
+            cursor: pointer;
+            padding: 2px 4px;
+            margin: 1px 2px;
+            border-radius: 6px;
+            transition: all 0.15s ease;
+            user-select: text;
+        }
+        .sub-word-token:hover {
+            background-color: rgba(244, 63, 94, 0.18);
+            transform: translateY(-1px);
+        }
+        .sub-word-token.selected-word {
+            background-color: rgba(225, 29, 72, 0.3) !important;
+            border-bottom: 2px solid #e11d48;
+            font-weight: 800;
+        }
+
+        /* Floating Tooltip */
+        #selectionTooltip {
+            position: fixed;
+            z-index: 90;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+            pointer-events: auto;
+        }
+
+        /* Audio Track Scrubber Colors */
+        body[data-theme="redwhite"] #divMusicProgressBarTrack {
+            background-color: rgba(254, 205, 211, 0.5) !important;
+            border-color: rgba(244, 63, 94, 0.3) !important;
+        }
+        body[data-theme="bluesky"] #divMusicProgressBarTrack {
+            background-color: rgba(186, 230, 253, 0.6) !important;
+            border-color: rgba(56, 189, 248, 0.4) !important;
+        }
+        body[data-theme="batman"] #divMusicProgressBarTrack {
+            background-color: rgba(24, 24, 27, 0.9) !important;
+            border-color: rgba(250, 204, 21, 0.3) !important;
+        }
+    </style>
+</head>
+<body data-theme="redwhite" class="h-full flex flex-col antialiased selection:bg-brand-600 selection:text-white" id="bodyRoot">
+
+    <canvas id="effectsCanvas"></canvas>
+
+    <!-- Floating Translation Tooltip for Selected Subtitle Words -->
+    <div id="selectionTooltip" class="hidden opacity-0 transform scale-95 transition-all duration-200">
+        <div class="glass-panel p-3 rounded-2xl border shadow-2xl space-y-2 max-w-sm backdrop-blur-md">
+            <div class="flex items-center justify-between gap-2 border-b border-brand-500/20 pb-1.5">
+                <span class="text-[10px] font-black uppercase text-sub tracking-wider flex items-center gap-1">
+                    <i class="fa-solid fa-language text-brand-500"></i> Translation (RU)
+                </span>
+                <button onclick="app.speakSelectedText()" title="Pronounce selection" class="text-brand-500 hover:text-brand-600 p-1 rounded-lg glass-subpanel text-xs active:scale-90 transition-transform">
+                    <i class="fa-solid fa-volume-high"></i>
+                </button>
+            </div>
+            <div>
+                <p id="tooltipOriginalText" class="text-xs font-bold opacity-80 truncate">"..."</p>
+                <div class="flex items-center gap-2 mt-0.5">
+                    <div id="tooltipLoadingSpinner" class="hidden text-brand-500 animate-spin text-xs">
+                        <i class="fa-solid fa-circle-notch"></i>
+                    </div>
+                    <p id="tooltipTranslatedText" class="text-sm font-black font-display text-brand-600 dark:text-brand-400">Loading...</p>
+                </div>
+            </div>
+            <div class="pt-1 flex items-center justify-end gap-1.5 border-t border-brand-500/20">
+                <button onclick="app.addCurrentSelection()" class="px-3 py-1 rounded-xl bg-gradient-to-r from-brand-600 to-rose-600 hover:from-brand-500 hover:to-rose-500 text-white font-black text-xs shadow-md transition-all active:scale-95 flex items-center gap-1">
+                    <i class="fa-solid fa-plus text-[10px]"></i> Add to TXT
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast Container -->
+    <div id="toastContainer" class="fixed bottom-5 right-5 z-50 flex flex-col space-y-2 pointer-events-none"></div>
+
+    <!-- Header Block: Stats, Themes, Sound, and Upload Button -->
+    <header class="theme-header sticky top-0 z-40 border-b px-3 py-2.5 shadow-lg transition-colors flex-shrink-0" id="headerMain">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2.5" id="divHeaderContainer">
+            
+            <!-- Brand Logo linked to index.html -->
+            <a href="index.html" class="flex items-center space-x-2.5 hover:opacity-90 transition-opacity" id="divBrandContainer">
+                <div class="w-8 h-8 rounded-xl bg-gradient-to-tr from-brand-600 via-rose-500 to-amber-400 flex items-center justify-center text-white font-black text-sm shadow-md" id="divBrandIcon">
+                    <i class="fa-solid fa-closed-captioning text-xs" id="iconBrandCC"></i>
+                </div>
+                <div id="divBrandTextWrapper">
+                    <h1 class="font-display font-black text-sm tracking-tight leading-none flex items-center gap-1" id="h1AppTitle">
+                        SubMaster <span class="bg-gradient-to-r from-brand-500 to-amber-400 bg-clip-text text-transparent" id="spanProTag">Pro</span>
+                    </h1>
+                    <p class="text-[9px] text-sub font-semibold tracking-wide uppercase mt-0.5" id="pAppSubtitle">Subtitle Phrase Studio</p>
+                </div>
+            </a>
+
+            <!-- Header Statistics: Number of Words Added & Segment Counter -->
+            <div class="flex items-center space-x-2" id="divHeaderStatsContainer">
+                <div class="flex items-center space-x-1.5 glass-subpanel px-3 py-1 rounded-xl border border-rose-500/30 shadow-sm" title="Number of words added to vocabulary" id="divWordsAddedBadge">
+                    <i class="fa-solid fa-bookmark text-rose-500 text-xs" id="iconWordsAdded"></i>
+                    <span id="statWordsAddedCount" class="font-display font-black text-xs text-rose-600 dark:text-rose-400">0</span>
+                    <span class="text-[10px] text-sub font-bold uppercase tracking-wider" id="spanWordsAddedLabel">Words Added</span>
+                </div>
+
+            </div>
+
+            <!-- Controls: Themes, Sound & Upload Button -->
+            <div class="flex items-center space-x-2" id="divHeaderActionsContainer">
+                <!-- Theme Selectors -->
+                <div class="flex items-center space-x-1 glass-subpanel p-0.5 rounded-full border" id="divThemeVariantContainer">
+                    <button onclick="app.setThemeVariant('redwhite')" id="btnThemeRedWhite" title="Red White Glass" class="theme-circle-btn active-theme">🍷</button>
+                    <button onclick="app.setThemeVariant('bluesky')" id="btnThemeBlueSky" title="Blue Sky" class="theme-circle-btn">☁️</button>
+                    <button onclick="app.setThemeVariant('batman')" id="btnThemeBatman" title="Dark Batman" class="theme-circle-btn">🦇</button>
+                </div>
+
+                <!-- Sound Mute/Unmute -->
+                <button id="btnToggleSound" onclick="app.toggleSound()" title="Sound On/Off" class="w-8 h-8 rounded-xl glass-subpanel hover:border-brand-500/50 flex items-center justify-center transition-colors border shadow-sm">
+                    <i class="fa-solid fa-volume-high text-xs text-brand-500" id="iconSound"></i>
+                </button>
+
+                <!-- UPLOAD BUTTON -->
+                <button id="btnOpenUploadModal" onclick="app.openUploadModal()" class="px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-brand-600 via-rose-600 to-amber-500 hover:from-brand-500 hover:to-amber-400 text-white font-black text-xs shadow-md transition-all active:scale-95 flex items-center space-x-1.5">
+                    <i class="fa-solid fa-cloud-arrow-up text-xs" id="iconUploadHeader"></i>
+                    <span id="spanUploadHeaderText">Upload</span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Main Content Container with 4 Blocks -->
+    <main class="flex-1 max-w-5xl w-full mx-auto p-3 sm:p-5 flex flex-col justify-center" id="mainContentContainer">
+        <div class="space-y-4 sm:space-y-5 animate-pop-in" id="divMainInnerWrapper">
+
+            <!-- Card Container -->
+            <div class="glass-panel p-4 sm:p-6 rounded-3xl border shadow-xl space-y-4 sm:space-y-5 relative overflow-hidden transition-all" id="divExerciseCardPanel">
+                
+                <!-- Card Header Action Bar (Timestamp, Speed, Replay, Background View) -->
+                <div class="flex items-center justify-between border-b border-brand-500/20 pb-3" id="divExerciseHeaderBar">
+                    <div class="flex items-center space-x-2" id="divTimestampBadgeContainer">
+                        <span id="lblMediaTypeBadge" class="px-2.5 py-0.5 rounded-lg bg-brand-500/20 border border-brand-500/30 text-brand-500 text-xs font-black uppercase">Clip</span>
+                        <span id="lblActiveTimestamp" class="px-2.5 py-0.5 rounded-lg glass-subpanel border text-sub text-xs font-black font-mono">00:00:00 - 00:05:60</span>
+                    </div>
+
+                    <div class="flex items-center space-x-2" id="divActionButtonsContainer">
+                        <button onclick="app.toggleSpeed()" id="btnSpeedToggle" title="Playback Speed" class="px-2.5 py-1 rounded-xl glass-subpanel hover:border-brand-500/40 text-xs font-mono font-black text-amber-500 flex items-center space-x-1">
+                            <i class="fa-solid fa-gauge-high text-[10px]" id="iconSpeedGauge"></i>
+                            <span id="lblSpeedVal">1.0x</span>
+                        </button>
+
+                        <button id="btnReplaySegment" onclick="app.replaySegment()" title="Replay current segment" class="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-gradient-to-r from-brand-600 to-rose-600 hover:from-brand-500 hover:to-rose-500 text-white font-extrabold text-xs shadow-md transition-all active:scale-95">
+                            <i class="fa-solid fa-rotate-right" id="iconReplay"></i>
+                            <span id="spanReplayText">Replay</span>
+                        </button>
+
+                        <button id="btnVideoViewMode" onclick="app.toggleVideoViewMode()" title="Toggle Video View" class="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl glass-subpanel hover:border-brand-500/40 text-sub font-extrabold text-xs shadow-md transition-all active:scale-95">
+                            <i class="fa-solid fa-layer-group text-[10px]" id="iconVideoViewMode"></i>
+                            <span id="lblVideoViewMode">Background View</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- BLOCK 2: Display Video or MP3 Player (View like uploaded webpage) -->
+                <div id="block2MediaContainer" class="space-y-3">
+                    <!-- HTML5 Video Player Wrapper -->
+                    <div id="videoPlayerWrapper" class="relative w-full aspect-video max-h-[400px] rounded-2xl overflow-hidden bg-black shadow-2xl border border-slate-800 flex items-center justify-center group transition-all duration-300">
+                        <video id="mediaPlayer" playsinline preload="auto" controls class="w-full h-full object-contain">
+                            Your browser does not support the video tag.
+                        </video>
+
+                        <div id="videoErrorOverlay" class="absolute inset-0 bg-slate-950/95 flex flex-col items-center justify-center p-6 text-center space-y-3 hidden pointer-events-auto z-20">
+                            <i class="fa-solid fa-triangle-exclamation text-amber-500 text-4xl animate-bounce" id="iconVideoError"></i>
+                            <h4 class="text-white font-black text-lg" id="h4VideoErrorTitle">Media File Not Loaded</h4>
+                            <p class="text-xs text-sub max-w-md" id="pVideoErrorDesc">Click the "Upload" button to load video or MP3 audio from disk or enter a link.</p>
+                            <button onclick="app.openUploadModal('media')" class="px-4 py-2 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs shadow-lg">
+                                Upload Multimedia
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Audio Progress Container (displayed when MP3/Music is loaded) -->
+                    <div id="audioProgressContainer" class="hidden glass-subpanel p-4 sm:p-5 rounded-2xl border shadow-md space-y-2.5 transition-all">
+                        <div class="flex items-center justify-between text-xs font-bold" id="divAudioTrackInfo">
+                            <div class="flex items-center space-x-2.5 text-sub" id="divMusicTrackTitleWrapper">
+                                <div class="w-8 h-8 rounded-xl bg-brand-500/20 text-brand-500 flex items-center justify-center text-sm shadow-sm">
+                                    <i class="fa-solid fa-music animate-pulse" id="iconMusicNote"></i>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span id="lblMusicTrackTitle" class="truncate max-w-[200px] sm:max-w-md font-display font-black text-xs sm:text-sm">Audio Track</span>
+                                    <span class="text-[10px] text-sub opacity-70 font-semibold uppercase tracking-wider">MP3 Audio Clip</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <span id="lblAudioTimeCurrent" class="font-mono text-xs text-sub font-black px-2 py-0.5 rounded-lg glass-subpanel border">0.00s / 0.00s</span>
+                            </div>
+                        </div>
+                        <div class="w-full bg-slate-900/30 rounded-full h-3 sm:h-3.5 overflow-hidden border border-brand-500/20 cursor-pointer p-0.5 relative" id="divMusicProgressBarTrack" title="Click to seek within segment">
+                            <div id="musicProgressBar" class="h-full bg-gradient-to-r from-brand-600 via-rose-500 to-amber-400 rounded-full transition-all duration-75 shadow-sm" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BLOCK 3: Subtitles Display (Word Selection & Tooltip Translation) -->
+                <div id="block3SubtitlesContainer" class="glass-subpanel p-5 sm:p-6 rounded-2xl border space-y-3 relative transition-all">
+                    <div class="flex items-center justify-between border-b border-brand-500/15 pb-2" id="divSubtitlesHeaderBar">
+                        <div class="flex items-center space-x-2">
+                            <span class="px-2 py-0.5 rounded-md bg-brand-500/20 text-brand-500 font-extrabold text-[10px] uppercase tracking-wider">
+                                Subtitles
+                            </span>
+                            <span class="text-xs text-sub font-bold hidden sm:inline">
+                                Select one or more words to translate & add
+                            </span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <button onclick="app.speakFullSubtitle()" title="Listen to phrase pronunciation" class="px-2.5 py-1 rounded-xl glass-subpanel hover:border-brand-500/40 text-brand-500 font-bold text-xs flex items-center space-x-1 transition-all">
+                                <i class="fa-solid fa-volume-high text-[10px]"></i>
+                                <span class="text-[11px]">Pronounce</span>
+                            </button>
+                            <label for="lblSegmentIndexInfo" class="text-[11px] font-bold text-sub whitespace-nowrap">Segment</label>
+                            <input type="number" id="lblSegmentIndexInfo" min="1" value="1" step="1" onchange="app.jumpToSegment(this.value)" class="w-16 border rounded-md px-1.5 py-1 font-mono font-bold text-xs text-brand-500 focus:outline-none focus:border-brand-500 text-center" title="Enter a segment number to jump directly to it">
+                            <span id="lblSegmentTotalCount" class="text-[11px] font-mono font-black text-sub whitespace-nowrap" aria-live="polite">1 / 6</span>
+                        </div>
+                    </div>
+
+                    <!-- Subtitle Text Display Area with Selectable Words -->
+                    <div id="subtitleWordsWrapper" class="min-h-[60px] flex items-center justify-center p-2 text-center text-lg sm:text-2xl font-display font-bold leading-relaxed tracking-wide select-text">
+                        <span class="text-sub italic opacity-60">"Upload subtitles or TXT file to begin..."</span>
+                    </div>
+                </div>
+
+                <!-- BLOCK 4: Controls (Start/Next, Previous, Add, Non-Stop + Input Number) -->
+                <div id="block4ControlsContainer" class="glass-subpanel p-4 rounded-2xl border flex flex-wrap items-center justify-between gap-3">
+                    
+                    <!-- Left: Navigation (Previous & Start/Next) -->
+                    <div class="flex items-center space-x-2 flex-wrap">
+                        <button id="btnPrevious" onclick="app.previousSegment()" title="Go to previous segment" class="px-4 py-2.5 rounded-xl glass-subpanel hover:border-brand-500/50 text-sub font-black text-xs sm:text-sm flex items-center space-x-1.5 shadow-md active:scale-95 transition-all">
+                            <i class="fa-solid fa-backward-step"></i>
+                            <span>Previous</span>
+                        </button>
+
+
+                        <button id="btnStartNext" onclick="app.startNextSegment()" title="Start / Next Segment" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-600 via-rose-600 to-amber-500 hover:from-brand-500 hover:to-amber-400 text-white font-black text-xs sm:text-sm shadow-xl active:scale-95 transition-all flex items-center space-x-2">
+                            <i class="fa-solid fa-play" id="iconStartNext"></i>
+                            <span id="lblStartNextText">Start / Next</span>
+                        </button>
+                    </div>
+
+                    <!-- Right: Non-Stop Toggle & Delay Number Input -->
+                    <div class="flex items-center space-x-2.5 glass-subpanel px-3 py-1.5 rounded-xl border">
+                        <button id="btnToggleNonStop" onclick="app.toggleNonStopMode()" class="px-3 py-1.5 rounded-lg text-xs font-black transition-all glass-subpanel text-sub hover:opacity-100 flex items-center space-x-1.5 border">
+                            <i class="fa-solid fa-infinity text-xs" id="iconNonStop"></i>
+                            <span id="lblNonStopState">Non-Stop: OFF</span>
+                        </button>
+
+                        <div class="flex items-center space-x-1.5">
+                            <input type="number" id="inputNonStopDelay" min="0" max="60" value="3" onchange="app.setNonStopDelay(this.value)" class="w-14 border rounded-md px-1.5 py-0.5 font-mono font-bold text-xs text-brand-500 focus:outline-none focus:border-brand-500 text-center" title="Pause duration between segments (seconds)">
+                            <span class="text-[11px] font-black text-sub">sec</span>
+                        </div>
+
+                       
+
+                        <div id="badgeNonStopCountdown" class="hidden px-2 py-0.5 rounded-md bg-emerald-500/20 text-emerald-500 border border-emerald-500/30 font-mono font-black text-xs min-w-[4rem] text-center">
+                            Next: <span id="lblNonStopCountdown">3</span>s
+                        </div>
+                    </div>
+                    <button id="tabBtnTxt" onclick="app.toggleTxtPanel()" title="Show or hide TXT lines" class="px-3 py-1.5 rounded-lg glass-subpanel hover:border-brand-500/50 text-sub font-black text-xs sm:text-sm flex items-center space-x-1.5 border shadow-md active:scale-95 transition-all">
+                        <i class="fa-solid fa-file-lines"></i>
+                        <span>TXT</span>
+                    </button>
+
+                </div>
+
+                <!-- TXT content moved into the exercise card after the controls -->
+                <div id="tabContentTxt" class="space-y-3.5 flex-1 overflow-y-auto pr-1 hidden">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                    <div>
+                        <h4 class="font-display font-black text-sm">Vocabulary & Segments TXT List</h4>
+                        <p class="text-[11px] text-sub">Format: <code class="font-mono bg-black/10 px-1 py-0.5 rounded">min:sec:ms - min:sec:ms = Russian = English</code></p>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                        <button onclick="document.getElementById('txtFileInput').click()" class="px-3 py-1 rounded-lg glass-subpanel hover:border-brand-500 text-xs font-bold text-brand-500 border">
+                            <i class="fa-solid fa-hard-drive mr-1"></i> Load from Disk
+                        </button>
+                        <input type="file" id="txtFileInput" accept=".txt" class="hidden">
+                        <button onclick="app.toggleTxtRawEditor()" id="btnToggleTxtRaw" class="px-3 py-1 rounded-lg glass-subpanel hover:border-brand-500 text-xs font-bold text-sub border">
+                            Raw Editor
+                        </button>
+                        <button id="exportTXTtoDisk" onclick="app.exportTxtFile()" class="px-3 py-1 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold border border-emerald-500/30">
+                            <i class="fa-solid fa-download mr-1"></i> Export TXT to Disk
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Raw TXT Input Area (toggleable) -->
+                <div id="divRawTxtEditor" class="hidden space-y-2">
+                    <textarea id="txtRawInputArea" rows="6" placeholder="00:00:00 - 00:05:60 = доброе утро = good morning&#10;00:05:60 - 00:10:00 = как дела = how are you" class="w-full border rounded-xl p-3 font-mono text-xs focus:outline-none focus:border-brand-500"></textarea>
+                    <div class="flex justify-end gap-2">
+                        <button onclick="app.clearTxtLines()" id="btnClearTxtLines" class="px-4 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs shadow-md active:scale-95">
+                            <i class="fa-solid fa-eraser mr-1"></i> Clear
+                        </button>
+                        <button id="btnApplyRawTxtChanges" onclick="app.applyRawTxtChanges()" class="px-4 py-1.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs shadow-md">
+                            Apply & Save Lines
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Line-by-Line List Display (Shown in modal window line by line!) -->
+                <div class="space-y-2">
+                    <div class="flex items-center justify-between text-xs font-bold text-sub px-1">
+                        <span>Items Line-by-Line (<span id="lblTxtLinesCount">0</span>)</span>
+                        <span class="text-[10px] opacity-75">Click item to jump to segment</span>
+                    </div>
+
+                    <div id="txtLinesContainer" class="space-y-1.5 max-h-[300px] overflow-y-auto pr-1">
+                        <!-- Rendered dynamically -->
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- UPLOAD MODAL WINDOW -->
+    <div id="modalUpload" class="fixed inset-0 z-50 bg-slate-950/80 hidden flex items-center justify-center p-3 sm:p-5">
+        <div id="modalUploadCard" class="theme-modal glass-panel w-full max-w-3xl rounded-3xl p-5 sm:p-7 space-y-5 shadow-2xl relative max-h-[92vh] flex flex-col">
+            
+            <!-- Close Modal Button -->
+            <button id="btnCloseUploadModal" onclick="app.closeUploadModal()" class="absolute top-5 right-5 text-sub hover:opacity-100 opacity-70 text-xl transition-opacity">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <!-- Modal Header -->
+            <div class="flex flex-wrap items-center justify-between gap-3 border-b border-brand-500/20 pb-3" id="divModalUploadHeader">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-brand-600 to-rose-500 text-white flex items-center justify-center text-xl shadow-md">
+                        <i class="fa-solid fa-folder-open"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-black font-display">Upload & Content Manager</h3>
+                        <p class="text-xs text-sub">Load subtitles, multimedia, and manage TXT vocabulary line by line.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal 4 Feature Tabs / Buttons -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2" id="divUploadModalTabs">
+                <button id="tabBtnSubtitles" onclick="app.switchUploadTab('subtitles')" class="px-3 py-2 rounded-xl text-xs font-black bg-gradient-to-r from-brand-600 to-rose-500 text-white shadow-md transition-all flex items-center justify-center gap-1.5">
+                    <i class="fa-solid fa-closed-captioning"></i>
+                    <span>Subtitles</span>
+                </button>
+                <button id="tabBtnMedia" onclick="app.switchUploadTab('media')" class="px-3 py-2 rounded-xl text-xs font-black glass-subpanel text-sub hover:text-white transition-all flex items-center justify-center gap-1.5 border">
+                    <i class="fa-solid fa-film"></i>
+                    <span>Multimedia</span>
+                </button>
+            </div>
+
+            <!-- Tab 1: Upload Subtitles (SRT, VTT, YouTube type from disk or link) -->
+            <div id="tabContentSubtitles" class="space-y-4 flex-1 overflow-y-auto pr-1">
+                <div class="glass-subpanel p-3.5 rounded-xl border space-y-1">
+                    <h4 class="font-bold text-xs text-brand-600 flex items-center gap-1.5">
+                        <i class="fa-solid fa-circle-info"></i> Supported Subtitle Formats
+                    </h4>
+                    <p class="text-[11px] text-sub">
+                        Upload standard <strong>.srt</strong>, <strong>.vtt</strong>, or custom parsed files from disk or link.
+                    </p>
+                </div>
+
+                <!-- Dropzone / Disk Upload -->
+                <div id="subtitlesDropZone" onclick="document.getElementById('subtitlesFileInput').click()" class="glass-subpanel border-2 border-dashed border-brand-500/40 hover:border-brand-500 rounded-2xl p-5 text-center cursor-pointer transition-colors">
+                    <i class="fa-solid fa-cloud-arrow-up text-3xl text-brand-500 mb-2"></i>
+                    <p class="text-xs font-bold text-sub">Drag & Drop `.srt` or `.txt` file here, or <span class="text-brand-500 underline font-black">browse disk</span></p>
+                    <input type="file" id="subtitlesFileInput" accept=".srt,.vtt,.txt,.sbv" class="hidden">
+                </div>
+
+                <!-- Link Input -->
+                <div class="space-y-1.5">
+                    <label class="text-xs font-black text-sub uppercase">Or Load Subtitles From Link</label>
+                    <div class="flex gap-2">
+                        <input type="url" id="inputSubtitlesUrl" placeholder="https://example.com/subtitles.srt" class="flex-1 border rounded-xl px-3 py-2 text-xs font-mono focus:outline-none focus:border-brand-500">
+                        <button onclick="app.loadSubtitlesFromLink()" class="px-4 py-2 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-black text-xs shadow-md">
+                            Load Link
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Status Info -->
+                <div class="flex items-center justify-between text-xs text-sub pt-2 border-t border-brand-500/20">
+                    <span id="lblSubtitlesLoadedCount" class="font-bold">0 segments currently loaded</span>
+                    <button onclick="app.loadSampleSubtitles()" class="px-3 py-1 rounded-lg glass-subpanel text-brand-500 font-bold hover:underline text-[11px]">
+                        Load Sample Subtitles
+                    </button>
+                </div>
+
+                <!-- Parsed subtitle preview: populated after a subtitle file or link is loaded -->
+                <div id="divParsedSubtitlesPreview" class="hidden glass-subpanel rounded-xl border p-3 space-y-2">
+                    <div class="flex flex-wrap items-center justify-between gap-2">
+                        <h4 class="text-xs font-black text-brand-600">Loaded Parsed Subtitles</h4>
+                        <span id="lblParsedPreviewCount" class="text-[10px] font-bold text-sub">0 segments</span>
+                    </div>
+                    <div class="flex flex-wrap gap-2" id="divParsedSubtitleExportControls">
+                        <button id="btnExportParsedTxt" type="button" onclick="app.exportParsedSubtitles(false)" class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold border border-emerald-500/30">
+                            <i class="fa-solid fa-download mr-1" aria-hidden="true"></i>Export TXT
+                        </button>
+                        <button id="btnExportParsedWithTranslation" type="button" onclick="app.exportParsedSubtitles(true)" class="px-3 py-1.5 rounded-lg bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold border border-brand-500/30">
+                            <i class="fa-solid fa-language mr-1" aria-hidden="true"></i>Export with translation
+                        </button>
+                    </div>
+                    <div id="parsedSubtitlesPreviewList" class="max-h-56 overflow-y-auto space-y-1.5 pr-1"></div>
+                </div>
+            </div>
+
+            <!-- Tab 2: Upload Multimedia (Video or Music from disk or link) -->
+            <div id="tabContentMedia" class="space-y-4 flex-1 overflow-y-auto pr-1 hidden">
+                <div class="glass-subpanel p-3.5 rounded-xl border space-y-1">
+                    <h4 class="font-bold text-xs text-brand-600 flex items-center gap-1.5">
+                        <i class="fa-solid fa-circle-info"></i> Supported Multimedia Formats
+                    </h4>
+                    <p class="text-[11px] text-sub">
+                        Supports video (<strong>.mp4, .webm, .mkv</strong>) and music audio (<strong>.mp3, .wav, .m4a, .ogg</strong>).
+                    </p>
+                </div>
+
+                <!-- Dropzone / Disk Upload -->
+                <div id="mediaDropZone" onclick="document.getElementById('mediaFileInput').click()" class="glass-subpanel border-2 border-dashed border-amber-500/40 hover:border-amber-500 rounded-2xl p-5 text-center cursor-pointer transition-colors">
+                    <i class="fa-solid fa-film text-3xl text-amber-500 mb-2"></i>
+                    <p class="text-xs font-bold text-sub">Drag & Drop Video / MP3 file from local disk, or <span class="text-amber-500 underline font-black">browse disk</span></p>
+                    <input type="file" id="mediaFileInput" accept="video/*,audio/*" class="hidden">
+                </div>
+
+                <!-- Link Input -->
+                <div class="space-y-1.5">
+                    <label class="text-xs font-black text-sub uppercase">Or Load Multimedia From Link</label>
+                    <div class="flex gap-2">
+                        <input type="url" id="inputMediaUrl" placeholder="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" class="flex-1 border rounded-xl px-3 py-2 text-xs font-mono focus:outline-none focus:border-brand-500">
+                        <button onclick="app.loadMediaFromLink()" class="px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-black text-xs shadow-md">
+                            Load Media
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Active Media Info Card -->
+                <div id="cardActiveMediaInfo" class="glass-subpanel p-3.5 rounded-xl border flex items-center justify-between">
+                    <div class="flex items-center space-x-2.5">
+                        <i id="iconActiveMediaType" class="fa-solid fa-video text-brand-500 text-lg"></i>
+                        <div>
+                            <p id="lblActiveMediaTitle" class="text-xs font-bold truncate max-w-sm">Default Sample Video</p>
+                            <p id="lblActiveMediaType" class="text-[10px] text-sub uppercase">Video Clip</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-2">
+                        <button onclick="app.loadSampleVideo()" class="px-2.5 py-1 rounded-lg glass-subpanel text-brand-500 font-bold hover:underline text-[11px]">
+                            Sample Video
+                        </button>
+                        <button onclick="app.loadSampleAudio()" class="px-2.5 py-1 rounded-lg glass-subpanel text-amber-500 font-bold hover:underline text-[11px]">
+                            Sample MP3
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Footer with Export & Close Actions -->
+            <div class="pt-3 border-t border-brand-500/20 flex items-center justify-between mt-auto" id="divModalUploadFooter">
+                <div class="flex items-center gap-2">
+                    <button onclick="app.closeUploadModal()" class="px-5 py-2 rounded-xl bg-gradient-to-r from-brand-600 to-rose-600 text-white font-black text-xs shadow-md active:scale-95">
+                        Close
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Application Script Logic -->
+    <script id="scriptAppMain">
+        // Default Sample Subtitle Segments
+        const DEFAULT_SEGMENTS = [
+            { start: 0.0, end: 4.5, en: "Good morning! Welcome to our English lesson.", ru: "Доброе утро! Добро пожаловать на наш урок английского." },
+            { start: 4.5, end: 9.0, en: "Today is a wonderful day to practice your vocabulary.", ru: "Сегодня прекрасный день для тренировки словарного запаса." },
+            { start: 9.0, end: 14.2, en: "You can select any word to see the translation.", ru: "Вы можете выбрать любое слово, чтобы увидеть перевод." },
+            { start: 14.2, end: 19.5, en: "Click the add button to save it to your vocabulary list.", ru: "Нажмите кнопку добавить, чтобы сохранить его в список слов." },
+            { start: 19.5, end: 25.0, en: "Turn on non-stop mode to listen step by step automatically.", ru: "Включите режим нон-стоп, чтобы слушать шаг за шагом автоматически." },
+            { start: 25.0, end: 31.0, en: "Have fun learning and enjoy every single step!", ru: "Учитесь с удовольствием и наслаждайтесь каждым шагом!" }
+        ];
+
+        const SAMPLE_VIDEO_URL = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4";
+        const SAMPLE_AUDIO_URL = "https://actions.google.com/sounds/v1/ambiences/coffee_shop.ogg";
+
+        const COMMON_DICTIONARY = {
+            "good": "хороший",
+            "morning": "утро",
+            "good morning": "доброе утро",
+            "welcome": "добро пожаловать",
+            "lesson": "урок",
+            "english": "английский",
+            "today": "сегодня",
+            "day": "день",
+            "wonderful": "чудесный",
+            "practice": "практиковать",
+            "vocabulary": "словарный запас",
+            "select": "выбрать",
+            "word": "слово",
+            "words": "слова",
+            "translation": "перевод",
+            "click": "нажмите",
+            "button": "кнопка",
+            "add": "добавить",
+            "save": "сохранить",
+            "list": "список",
+            "turn on": "включить",
+            "mode": "режим",
+            "step": "шаг",
+            "fun": "веселье",
+            "enjoy": "наслаждайтесь",
+            "hello": "привет",
+            "thank you": "спасибо",
+            "how are you": "как дела",
+            "see you": "увидимся"
+        };
+
+        function formatTimecode(seconds) {
+            if (isNaN(seconds) || seconds < 0) seconds = 0;
+            const mins = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60);
+            const centisecs = Math.floor((seconds % 1) * 100);
+            const pad = (n, len = 2) => String(n).padStart(len, '0');
+            return `${pad(mins)}:${pad(secs)}:${pad(centisecs)}`;
+        }
+
+        function parseTimecode(str) {
+            if (!str) return 0;
+            let s = str.trim().replace(',', '.');
+            if (s.includes(':')) {
+                const parts = s.split(':').map(p => parseFloat(p) || 0);
+                if (parts.length === 3) {
+                    let ms = parts[2];
+                    if (ms >= 100) ms = ms / 1000;
+                    else if (ms >= 10) ms = ms / 100;
+                    else if (ms > 0) ms = ms / 10;
+                    return parts[0] * 60 + parts[1] + ms;
+                } else if (parts.length === 2) {
+                    return parts[0] * 60 + parts[1];
+                }
+            }
+            return parseFloat(s) || 0;
+        }
+
+        function parseSrtTimestamp(str) {
+            if (!str) return 0;
+            const match = str.trim().match(/(\d+):(\d+)(?::(\d+(?:[.,]\d+)?))?/);
+            if (!match) {
+                const simple = parseFloat(str.replace(',', '.'));
+                return isNaN(simple) ? 0 : simple;
+            }
+            if (match[3] !== undefined) {
+                const h = parseFloat(match[1]) || 0;
+                const m = parseFloat(match[2]) || 0;
+                const s = parseFloat(match[3].replace(',', '.')) || 0;
+                return h * 3600 + m * 60 + s;
+            } else {
+                const m = parseFloat(match[1]) || 0;
+                const s = parseFloat(match[2].replace(',', '.')) || 0;
+                return m * 60 + s;
+            }
+        }
+
+        class ParticleEngine {
+            constructor(canvasId) {
+                this.canvas = document.getElementById(canvasId);
+                if (!this.canvas) return;
+                this.ctx = this.canvas.getContext('2d');
+                this.particles = [];
+                this.animating = false;
+                this.resize();
+                window.addEventListener('resize', () => this.resize());
+            }
+
+            resize() {
+                if (!this.canvas) return;
+                this.canvas.width = window.innerWidth;
+                this.canvas.height = window.innerHeight;
+            }
+
+            burst(count = 28) {
+                const colors = ['#f43f5e', '#e11d48', '#10b981', '#06b6d4', '#f59e0b', '#a855f7'];
+                for (let i = 0; i < count; i++) {
+                    this.particles.push({
+                        x: window.innerWidth / 2,
+                        y: window.innerHeight / 2,
+                        vx: (Math.random() - 0.5) * 15,
+                        vy: (Math.random() - 0.5) * 15 - 2,
+                        size: Math.random() * 5 + 3,
+                        color: colors[Math.floor(Math.random() * colors.length)],
+                        alpha: 1,
+                        decay: Math.random() * 0.025 + 0.02
+                    });
+                }
+                if (!this.animating) {
+                    this.animating = true;
+                    this.animate();
+                }
+            }
+
+            animate() {
+                if (!this.canvas || !this.ctx) return;
+                this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+
+                for (let i = this.particles.length - 1; i >= 0; i--) {
+                    const p = this.particles[i];
+                    p.x += p.vx;
+                    p.y += p.vy;
+                    p.vy += 0.2;
+                    p.alpha -= p.decay;
+
+                    if (p.alpha <= 0) {
+                        this.particles.splice(i, 1);
+                        continue;
+                    }
+
+                    this.ctx.globalAlpha = p.alpha;
+                    this.ctx.fillStyle = p.color;
+                    this.ctx.beginPath();
+                    this.ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                    this.ctx.fill();
+                }
+
+                if (this.particles.length > 0) {
+                    requestAnimationFrame(() => this.animate());
+                } else {
+                    this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                    this.animating = false;
+                }
+            }
+        }
+
+        class SoundEngine {
+            constructor() {
+                this.ctx = null;
+                this.enabled = true;
+            }
+
+            init() {
+                if (!this.ctx) {
+                    const AudioContext = window.AudioContext || window.webkitAudioContext;
+                    if (AudioContext) this.ctx = new AudioContext();
+                }
+            }
+
+            playTone(freq, type = 'sine', duration = 0.15) {
+                if (!this.enabled) return;
+                this.init();
+                if (!this.ctx) return;
+
+                try {
+                    const osc = this.ctx.createOscillator();
+                    const gain = this.ctx.createGain();
+                    osc.type = type;
+                    osc.frequency.setValueAtTime(freq, this.ctx.currentTime);
+                    gain.gain.setValueAtTime(0.12, this.ctx.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + duration);
+
+                    osc.connect(gain);
+                    gain.connect(this.ctx.destination);
+
+                    osc.start();
+                    osc.stop(this.ctx.currentTime + duration);
+                } catch (e) {
+                    console.warn(e);
+                }
+            }
+
+            playAddSuccess() {
+                this.playTone(523.25, 'triangle', 0.1);
+                setTimeout(() => this.playTone(659.25, 'triangle', 0.12), 80);
+                setTimeout(() => this.playTone(783.99, 'triangle', 0.18), 160);
+            }
+
+            playVocabularyAdded() {
+                this.playTone(659.25, 'sine', 0.09);
+                setTimeout(() => this.playTone(987.77, 'sine', 0.16), 95);
+            }
+
+            playClick() {
+                this.playTone(440, 'sine', 0.05);
+            }
+        }
+
+        class SubtitleApp {
+            constructor() {
+                this.sound = new SoundEngine();
+                this.particles = new ParticleEngine('effectsCanvas');
+
+                this.mediaEl = document.getElementById('mediaPlayer');
+                this.timeUpdateHandler = null;
+
+                this.state = {
+                    themeVariant: 'redwhite',
+                    playbackSpeed: 1.0,
+                    videoViewMode: 'normal',
+                    mediaType: 'video', 
+                    mediaUrl: SAMPLE_VIDEO_URL,
+                    mediaFileName: 'Sample Video',
+                    hasActualMedia: false,
+                    segmentMediaLinks: new Map(), 
+
+                    segments: [],
+                    currentIndex: 0,
+                    isPlayingSegment: false,
+                    hasStarted: false,
+                    segmentFinished: false,
+
+                    isNonStop: false,
+                    nonStopDelay: 3,
+                    nonStopTimer: null,
+                    countdownInterval: null,
+
+                    txtLines: [],
+                    wordsAddedCount: 0,
+
+                    activeSelection: {
+                        text: '',
+                        translation: '',
+                        start: 0,
+                        end: 0
+                    },
+
+                    translationCache: {}
+                };
+
+                this.init();
+            }
+
+            async init() {
+                this.setThemeVariant('redwhite');
+                this.setupMediaEngine();
+                this.setupScrubber();
+                this.setupDragAndDrop();
+                this.setupTextSelectionListener();
+                this.setupGlobalKeyboard();
+                
+                this.loadInitialSegments();
+                this.setMediaSource(SAMPLE_VIDEO_URL, 'video', 'Big Buck Bunny (Sample)', false);
+            }
+
+            loadInitialSegments() {
+                this.state.segments = JSON.parse(JSON.stringify(DEFAULT_SEGMENTS));
+                this.state.currentIndex = 0;
+                this.updateHeaderStats();
+                this.renderCurrentSegment();
+                this.updateSubtitlesCountBadge();
+            }
+
+            setThemeVariant(variant) {
+                this.state.themeVariant = variant;
+                document.body.setAttribute('data-theme', variant);
+
+                const buttons = {
+                    redwhite: document.getElementById('btnThemeRedWhite'),
+                    bluesky: document.getElementById('btnThemeBlueSky'),
+                    batman: document.getElementById('btnThemeBatman')
+                };
+
+                Object.keys(buttons).forEach(key => {
+                    const btn = buttons[key];
+                    if (!btn) return;
+                    if (key === variant) btn.classList.add('active-theme');
+                    else btn.classList.remove('active-theme');
+                });
+            }
+
+            toggleSound() {
+                this.sound.enabled = !this.sound.enabled;
+                // The global Sound On/Off control also governs spoken subtitles
+                // and the audio track, not just interface sound effects.
+                if (!this.sound.enabled && 'speechSynthesis' in window) {
+                    window.speechSynthesis.cancel();
+                    this.state.isPlayingSegment = false;
+                    this.updatePlayButtonState(false);
+                }
+                if (this.mediaEl) this.mediaEl.muted = !this.sound.enabled;
+                const icon = document.getElementById('iconSound');
+                if (icon) {
+                    icon.className = this.sound.enabled ? "fa-solid fa-volume-high text-xs text-brand-500" : "fa-solid fa-volume-xmark text-xs text-slate-500";
+                }
+                this.showToast(this.sound.enabled ? "Sound Unmuted" : "Sound Muted");
+            }
+
+            toggleSpeed() {
+                const speeds = [0.75, 1.0, 1.25, 1.5];
+                const curIdx = speeds.indexOf(this.state.playbackSpeed);
+                const nextIdx = (curIdx + 1) % speeds.length;
+                this.state.playbackSpeed = speeds[nextIdx];
+                
+                const speedLbl = document.getElementById('lblSpeedVal');
+                if (speedLbl) speedLbl.innerText = `${this.state.playbackSpeed}x`;
+                if (this.mediaEl) this.mediaEl.playbackRate = this.state.playbackSpeed;
+            }
+
+            setupMediaEngine() {
+                if (!this.mediaEl) return;
+
+                this.mediaEl.addEventListener('error', () => {
+                    const overlay = document.getElementById('videoErrorOverlay');
+                    if (overlay && this.state.mediaType === 'video') {
+                        overlay.classList.remove('hidden');
+                    }
+                });
+
+                this.mediaEl.addEventListener('ended', () => {
+                    this.handleSegmentEnded();
+                });
+            }
+
+            setMediaSource(url, type = 'video', name = '', isActualMedia = true) {
+                this.state.hasActualMedia = Boolean(isActualMedia);
+                this.state.mediaUrl = url;
+                this.state.mediaType = type;
+                this.state.mediaFileName = name || (type === 'video' ? 'Video File' : 'Audio Track');
+
+                const videoWrap = document.getElementById('videoPlayerWrapper');
+                const audioContainer = document.getElementById('audioProgressContainer');
+                const btnViewMode = document.getElementById('btnVideoViewMode');
+                const mediaTypeBadge = document.getElementById('lblMediaTypeBadge');
+
+                const picture = type === 'picture';
+                let pictureEl = document.getElementById('imgLinkedPicture');
+                if (picture && videoWrap) {
+                    if (!pictureEl) {
+                        pictureEl = document.createElement('img');
+                        pictureEl.id = 'imgLinkedPicture';
+                        pictureEl.alt = 'Loaded picture';
+                        pictureEl.className = 'absolute inset-0 w-full h-full object-contain bg-black';
+                        videoWrap.insertBefore(pictureEl, videoWrap.firstChild);
+                    }
+                    pictureEl.src = url;
+                    pictureEl.classList.remove('hidden');
+                    if (this.mediaEl) this.mediaEl.classList.add('hidden');
+                } else {
+                    if (pictureEl) pictureEl.classList.add('hidden');
+                    if (this.mediaEl) this.mediaEl.classList.remove('hidden');
+                }
+
+                if (type === 'music') {
+                    if (videoWrap) videoWrap.classList.add('hidden');
+                    if (audioContainer) audioContainer.classList.remove('hidden');
+                    if (btnViewMode) btnViewMode.classList.add('hidden');
+                    if (mediaTypeBadge) mediaTypeBadge.innerText = 'AUDIO';
+                    const lblMusicTitle = document.getElementById('lblMusicTrackTitle');
+                    if (lblMusicTitle) lblMusicTitle.innerText = this.state.mediaFileName;
+                } else {
+                    if (audioContainer) audioContainer.classList.add('hidden');
+                    if (videoWrap) videoWrap.classList.remove('hidden');
+                    if (btnViewMode) btnViewMode.classList.remove('hidden');
+                    if (mediaTypeBadge) mediaTypeBadge.innerText = picture ? 'PICTURE' : 'CLIP';
+                }
+
+                if (this.mediaEl && !picture) {
+                    this.mediaEl.muted = !this.sound.enabled;
+                    this.mediaEl.src = url;
+                    this.mediaEl.load();
+                }
+
+                const overlay = document.getElementById('videoErrorOverlay');
+                if (overlay) overlay.classList.add('hidden');
+
+                const cardMediaTitle = document.getElementById('lblActiveMediaTitle');
+                const cardMediaType = document.getElementById('lblActiveMediaType');
+                const cardMediaIcon = document.getElementById('iconActiveMediaType');
+                if (cardMediaTitle) cardMediaTitle.innerText = this.state.mediaFileName;
+                if (cardMediaType) cardMediaType.innerText = type === 'music' ? 'MP3 Audio' : (picture ? 'Picture' : 'Video Clip');
+                if (cardMediaIcon) {
+                    cardMediaIcon.className = type === 'music' ? "fa-solid fa-music text-amber-500 text-lg" : (picture ? "fa-solid fa-image text-amber-500 text-lg" : "fa-solid fa-video text-brand-500 text-lg");
+                }
+            }
+
+            toggleVideoViewMode() {
+                if (!['video', 'picture'].includes(this.state.mediaType)) return;
+                this.state.videoViewMode = this.state.videoViewMode === 'background' ? 'normal' : 'background';
+
+                const wrapper = document.getElementById('videoPlayerWrapper');
+                const mediaContainer = document.getElementById('block2MediaContainer');
+                const card = document.getElementById('divExerciseCardPanel');
+                const lblMode = document.getElementById('lblVideoViewMode');
+                const iconMode = document.getElementById('iconVideoViewMode');
+
+                const isBg = this.state.videoViewMode === 'background';
+                if (wrapper) wrapper.classList.toggle('video-background-mode', isBg);
+                if (mediaContainer) mediaContainer.classList.toggle('video-background-container', isBg);
+                if (card) card.classList.toggle('video-background-active', isBg);
+
+                if (lblMode) lblMode.innerText = isBg ? "Normal View" : "Background View";
+                if (iconMode) iconMode.className = isBg ? "fa-solid fa-expand text-[10px]" : "fa-solid fa-layer-group text-[10px]";
+            }
+
+            setupScrubber() {
+                const track = document.getElementById('divMusicProgressBarTrack');
+                if (!track) return;
+                track.addEventListener('click', (e) => {
+                    const cur = this.getCurrentSegment();
+                    if (!cur || !this.mediaEl) return;
+                    const rect = track.getBoundingClientRect();
+                    const pct = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+                    const dur = Math.max(0.1, cur.end - cur.start);
+                    this.mediaEl.currentTime = cur.start + pct * dur;
+                });
+            }
+
+            getCurrentSegment() {
+                if (this.state.segments.length === 0) return null;
+                const idx = Math.max(0, Math.min(this.state.segments.length - 1, this.state.currentIndex));
+                return this.state.segments[idx];
+            }
+
+            renderCurrentSegment() {
+                const seg = this.getCurrentSegment();
+                const container = document.getElementById('subtitleWordsWrapper');
+                const timestampBadge = document.getElementById('lblActiveTimestamp');
+                const segIndexInfo = document.getElementById('lblSegmentIndexInfo');
+                const segTotalInfo = document.getElementById('lblSegmentTotalCount');
+
+                if (!seg || !container) {
+                    if (container) container.innerHTML = `<span class="text-sub italic opacity-60">"Upload subtitles to begin..."</span>`;
+                    return;
+                }
+
+                // A media URL appended to a subtitle row is activated only when that
+                // segment becomes current, rather than prematurely loading the last URL
+                // encountered while parsing the whole TXT file.
+                const linkedMedia = this.state.segmentMediaLinks && this.state.segmentMediaLinks.get(Number(seg.start.toFixed(3)));
+                if (linkedMedia && linkedMedia.url && this.state.mediaUrl !== linkedMedia.url) {
+                    this.setMediaSource(linkedMedia.url, linkedMedia.type, linkedMedia.name, true);
+                    const mediaUrlInput = document.getElementById('inputMediaUrl');
+                    if (mediaUrlInput) mediaUrlInput.value = linkedMedia.url;
+                }
+
+                const sentences = this.splitSubtitleIntoSentences(seg.en);
+                container.innerHTML = '';
+                container.classList.remove('items-center', 'justify-center');
+                container.classList.add('flex-col', 'items-stretch', 'gap-3');
+                container.style.display = 'flex';
+                container.style.flexDirection = 'column';
+                container.style.width = '100%';
+
+                sentences.forEach((sentence, index) => {
+                    const row = document.createElement('div');
+                    row.id = `subtitleSentenceRow-${index}`;
+                    row.className = 'subtitle-sentence-row flex flex-wrap items-start gap-2 w-full text-left';
+                    row.style.width = '100%';
+
+                    const translateBtn = document.createElement('button');
+                    translateBtn.type = 'button';
+                    translateBtn.className = 'shrink-0 mt-1 p-2 rounded-lg bg-brand-600 hover:bg-brand-500 text-white shadow-sm transition-all active:scale-95 inline-flex items-center justify-center';
+                    translateBtn.title = 'Translate this sentence';
+                    translateBtn.innerHTML = '<i class="fa-solid fa-language text-sm" aria-hidden="true"></i>';
+                    translateBtn.setAttribute('aria-label', 'Translate this sentence');
+                    translateBtn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        this.translateSentenceLine(index, sentence, row);
+                    });
+
+                    const sentenceText = document.createElement('div');
+                    sentenceText.className = 'subtitle-sentence-text flex-1 min-w-0 font-display font-bold text-lg sm:text-2xl leading-relaxed';
+                    sentenceText.style.display = 'block';
+                    sentenceText.style.width = 'auto';
+
+                    sentence.split(/(\s+)/).forEach((part, wordIndex) => {
+                        if (!part) return;
+                        if (/^\s+$/.test(part)) {
+                            sentenceText.appendChild(document.createTextNode(part));
+                            return;
+                        }
+                        const wordSpan = document.createElement('span');
+                        wordSpan.className = 'sub-word-token cursor-pointer hover:text-brand-500 transition-colors';
+                        wordSpan.innerText = part;
+                        wordSpan.dataset.wordIndex = String(wordIndex);
+                        wordSpan.title = 'Click to translate this word';
+                        wordSpan.addEventListener('click', (e) => {
+                            e.stopPropagation();
+                            this.handleWordClick(part, wordSpan);
+                        });
+                        sentenceText.appendChild(wordSpan);
+                    });
+
+                    const translationArea = document.createElement('div');
+                    translationArea.className = 'sentence-translation-area hidden w-full basis-full mt-1 flex flex-wrap items-center gap-2';
+                    translationArea.dataset.sentenceIndex = index;
+
+                    row.appendChild(translateBtn);
+                    row.appendChild(sentenceText);
+                    row.appendChild(translationArea);
+                    container.appendChild(row);
+                });
+
+                const timeStr = `${formatTimecode(seg.start)} - ${formatTimecode(seg.end)}`;
+                if (timestampBadge) timestampBadge.innerText = timeStr;
+                if (segIndexInfo) { segIndexInfo.value = this.state.currentIndex + 1; segIndexInfo.max = this.state.segments.length; }
+                if (segTotalInfo) segTotalInfo.textContent = `  / ${this.state.segments.length}`;
+
+                this.state.activeSelection = {
+                    text: seg.en,
+                    translation: seg.ru || '',
+                    start: seg.start,
+                    end: seg.end
+                };
+
+                const addBtnText = document.getElementById('lblAddButtonText');
+                if (addBtnText) addBtnText.innerText = "Add Phrase";
+
+                this.updateHeaderStats();
+            }
+
+            splitSubtitleIntoSentences(text) {
+                if (!text || !text.trim()) return [];
+
+                const normalized = text
+                    .replace(/\r\n/g, ' ')
+                    .replace(/\r/g, ' ')
+                    .replace(/\n+/g, ' ')
+                    .replace(/\s+/g, ' ')
+                    .trim();
+
+                if (!normalized) return [];
+
+                const matches = normalized.match(/[^.!?…]+[.!?…]+|[^.!?…]+$/g);
+
+                return (matches || [normalized])
+                    .map(sentence => sentence.trim())
+                    .filter(Boolean);
+            }
+
+            async translateSentenceLine(index, sentence, row) {
+                const translationArea = row ? row.querySelector('.sentence-translation-area') : null;
+                if (!translationArea) return;
+
+                translationArea.classList.remove('hidden');
+                translationArea.innerHTML = `
+                    <div class="flex items-center gap-2 text-xs text-sub">
+                        <i class="fa-solid fa-circle-notch animate-spin text-brand-500"></i>
+                        <span>Translating...</span>
+                    </div>
+                `;
+
+                const seg = this.getCurrentSegment();
+                const translation = await this.translateEnToRu(sentence);
+
+                this.state.activeSelection = {
+                    text: sentence,
+                    translation,
+                    start: seg ? seg.start : 0,
+                    end: seg ? seg.end : 5
+                };
+
+                const result = document.createElement('div');
+                result.className = 'flex flex-wrap items-center gap-2 w-full';
+
+                const translatedText = document.createElement('span');
+                translatedText.className = 'px-3 py-1.5 rounded-lg glass-subpanel border text-brand-600 dark:text-brand-400 text-sm sm:text-base font-black';
+                translatedText.innerText = translation;
+
+                const addBtn = document.createElement('button');
+                addBtn.type = 'button';
+                addBtn.className = 'px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-[11px] font-black shadow-sm transition-all active:scale-95 flex items-center gap-1';
+                addBtn.innerHTML = '<i class="fa-solid fa-plus text-[10px]"></i><span>Add to TXT</span>';
+                addBtn.title = 'Add this translated sentence to TXT';
+                addBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    this.addTranslatedSentenceToTxt(sentence, translation, seg);
+                    addBtn.disabled = true;
+                    addBtn.classList.add('opacity-60', 'cursor-not-allowed');
+                    addBtn.querySelector('span').innerText = 'Added';
+                });
+
+                result.appendChild(translatedText);
+                result.appendChild(addBtn);
+                translationArea.replaceChildren(result);
+            }
+
+            addTranslatedSentenceToTxt(sentence, translation, seg = this.getCurrentSegment()) {
+                if (!sentence || !translation) return;
+
+                const start = seg ? seg.start : 0;
+                const end = seg ? seg.end : (start + 5);
+
+                this.state.txtLines.push({
+                    start,
+                    end,
+                    timeFormatted: `${formatTimecode(start)} - ${formatTimecode(end)}`,
+                    ru: translation,
+                    en: sentence,
+                    formattedLine: `${formatTimecode(start)} - ${formatTimecode(end)} = ${translation} = ${sentence}`
+                });
+
+                this.state.wordsAddedCount = this.state.txtLines.length;
+                this.updateHeaderStats();
+                this.renderTxtLinesInModal();
+                this.sound.playAddSuccess();
+                this.showToast('Sentence added to TXT');
+            }
+
+            setupTextSelectionListener() {
+                const subBox = document.getElementById('block3SubtitlesContainer');
+                if (!subBox) return;
+
+                document.addEventListener('selectionchange', () => {
+                    const selection = window.getSelection();
+                    if (!selection || selection.isCollapsed) return;
+
+                    const range = selection.getRangeAt(0);
+                    if (!subBox.contains(range.commonAncestorContainer)) return;
+
+                    const text = selection.toString().trim();
+                    if (text.length > 0) {
+                        this.triggerTranslationForText(text, range);
+                    }
+                });
+
+                document.addEventListener('click', (e) => {
+                    const tooltip = document.getElementById('selectionTooltip');
+                    if (!tooltip || tooltip.classList.contains('hidden') || tooltip.contains(e.target)) return;
+
+                    if (e.target.closest('.sub-word-token, .subtitle-sentence-translate, .subtitle-sentence-translate *')) return;
+                    this.hideTooltip();
+                });
+            }
+
+            handleWordClick(word, spanElement) {
+                document.querySelectorAll('.sub-word-token').forEach(s => s.classList.remove('selected-word'));
+                spanElement.classList.add('selected-word');
+
+                const cleanWord = word.replace(/[^a-zA-Zа-яА-ЯёЁ']/g, '').trim();
+                if (!cleanWord) return;
+
+                const rect = spanElement.getBoundingClientRect();
+                this.triggerTranslationForText(cleanWord, null, rect);
+            }
+
+            async triggerTranslationForText(text, range = null, customRect = null) {
+                const seg = this.getCurrentSegment();
+                const start = seg ? seg.start : 0;
+                const end = seg ? seg.end : 5;
+
+                this.state.activeSelection = {
+                    text,
+                    translation: '',
+                    start,
+                    end
+                };
+
+                const tooltip = document.getElementById('selectionTooltip');
+                const origEl = document.getElementById('tooltipOriginalText');
+                const transEl = document.getElementById('tooltipTranslatedText');
+                const spinner = document.getElementById('tooltipLoadingSpinner');
+                const addBtnText = document.getElementById('lblAddButtonText');
+
+                if (origEl) origEl.innerText = `"${text}"`;
+                if (transEl) transEl.innerText = 'Translating...';
+                if (spinner) spinner.classList.remove('hidden');
+                if (addBtnText) addBtnText.innerText = `Add "${text.slice(0, 14)}${text.length > 14 ? '...' : ''}"`;
+
+                let rect = customRect;
+                if (!rect && range) {
+                    rect = range.getBoundingClientRect();
+                }
+
+                if (rect && tooltip) {
+                    const tooltipWidth = 240;
+                    const left = Math.max(10, Math.min(window.innerWidth - tooltipWidth - 20, rect.left + rect.width / 2 - tooltipWidth / 2));
+                    const top = Math.max(10, rect.top - 120);
+
+                    tooltip.style.left = `${left}px`;
+                    tooltip.style.top = `${top}px`;
+                    tooltip.classList.remove('hidden');
+                    setTimeout(() => {
+                        tooltip.classList.remove('opacity-0', 'scale-95');
+                        tooltip.classList.add('opacity-100', 'scale-100');
+                    }, 10);
+                }
+
+                const translation = await this.translateEnToRu(text);
+                this.state.activeSelection.translation = translation;
+
+                if (transEl) transEl.innerText = translation;
+                if (spinner) spinner.classList.add('hidden');
+            }
+
+            hideTooltip() {
+                const tooltip = document.getElementById('selectionTooltip');
+                if (tooltip) {
+                    tooltip.classList.add('opacity-0', 'scale-95');
+                    tooltip.classList.remove('opacity-100', 'scale-100');
+                    setTimeout(() => tooltip.classList.add('hidden'), 200);
+                }
+            }
+
+            async translateEnToRu(text) {
+                const clean = text.trim();
+                if (!clean) return '';
+                const lower = clean.toLowerCase();
+
+                if (this.state.translationCache[lower]) {
+                    return this.state.translationCache[lower];
+                }
+
+                if (COMMON_DICTIONARY[lower]) {
+                    return COMMON_DICTIONARY[lower];
+                }
+
+                try {
+                    const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=${encodeURIComponent(clean)}`;
+                    const res = await fetch(url);
+                    if (res.ok) {
+                        const data = await res.json();
+                        if (data && data[0] && data[0][0] && data[0][0][0]) {
+                            const result = data[0].map(item => item[0]).join('').trim();
+                            this.state.translationCache[lower] = result;
+                            return result;
+                        }
+                    }
+                } catch (e) {
+                    console.warn("Google Translate client call failed:", e);
+                }
+
+                try {
+                    const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(clean)}&langpair=en|ru`;
+                    const res = await fetch(url);
+                    if (res.ok) {
+                        const data = await res.json();
+                        if (data.responseData && data.responseData.translatedText) {
+                            const result = data.responseData.translatedText.trim();
+                            this.state.translationCache[lower] = result;
+                            return result;
+                        }
+                    }
+                } catch (e) {
+                    console.warn("MyMemory API call failed:", e);
+                }
+
+                return clean;
+            }
+
+            speakSelectedText() {
+                const text = this.state.activeSelection.text;
+                if (!this.sound.enabled || !text || !('speechSynthesis' in window)) return;
+                window.speechSynthesis.cancel();
+                const u = new SpeechSynthesisUtterance(text);
+                u.lang = 'en-US';
+                u.rate = this.state.playbackSpeed || 1.0;
+                window.speechSynthesis.speak(u);
+            }
+
+            speakFullSubtitle() {
+                const seg = this.getCurrentSegment();
+                if (!this.sound.enabled || !seg || !('speechSynthesis' in window)) return;
+                window.speechSynthesis.cancel();
+                const u = new SpeechSynthesisUtterance(seg.en);
+                u.lang = 'en-US';
+                u.rate = this.state.playbackSpeed || 1.0;
+                window.speechSynthesis.speak(u);
+            }
+
+            startNextSegment() {
+                if (this.state.segments.length === 0) return;
+
+                if (this.state.isPlayingSegment || this.state.segmentFinished || this.state.hasStarted) {
+                    this.nextSegment();
+                } else {
+                    this.state.hasStarted = true;
+                    this.state.segmentFinished = false;
+                    this.playSegment(this.state.currentIndex);
+                }
+            }
+
+            nextSegment() {
+                if (this.state.segments.length === 0) return;
+                this.state.hasStarted = true;
+                this.state.segmentFinished = false;
+                if (this.state.currentIndex < this.state.segments.length - 1) {
+                    this.state.currentIndex++;
+                } else {
+                    this.state.currentIndex = 0; 
+                    this.showToast("Looped back to first segment");
+                }
+                this.renderCurrentSegment();
+                this.playSegment(this.state.currentIndex);
+            }
+
+            previousSegment() {
+                if (this.state.segments.length === 0) return;
+                this.state.hasStarted = true;
+                this.state.segmentFinished = false;
+                if (this.state.currentIndex > 0) {
+                    this.state.currentIndex--;
+                } else {
+                    this.state.currentIndex = this.state.segments.length - 1;
+                }
+                this.renderCurrentSegment();
+                this.playSegment(this.state.currentIndex);
+            }
+
+            jumpToSegment(value) {
+                const total = this.state.segments.length;
+                if (!total) return;
+                const requested = Number.parseInt(value, 10);
+                if (!Number.isFinite(requested)) {
+                    const input = document.getElementById('lblSegmentIndexInfo');
+                    if (input) input.value = this.state.currentIndex + 1;
+                    return;
+                }
+                const index = Math.max(0, Math.min(total - 1, requested - 1));
+                this.clearNonStopTimer();
+                this.state.currentIndex = index;
+                this.state.hasStarted = true;
+                this.state.segmentFinished = false;
+                this.renderCurrentSegment();
+                this.playSegment(index);
+            }
+
+            replaySegment() {
+                this.state.hasStarted = true;
+                this.state.segmentFinished = false;
+                this.playSegment(this.state.currentIndex);
+            }
+
+            playSegment(index) {
+                this.clearNonStopTimer();
+                if (index < 0 || index >= this.state.segments.length) return;
+
+                this.state.currentIndex = index;
+                this.state.hasStarted = true;
+                this.state.segmentFinished = false;
+                const seg = this.state.segments[index];
+                this.renderCurrentSegment();
+
+                // A picture URL is visual-only. Do not mistake a leftover video
+                // source in the hidden media element for playable media; use TTS
+                // for the subtitle while the picture is active.
+                if (this.state.mediaType === 'picture' || !this.state.hasActualMedia || !this.mediaEl || (!this.mediaEl.currentSrc && !this.mediaEl.getAttribute('src')) || (this.mediaEl.networkState === 3 && !this.mediaEl.currentSrc)) {
+                    this.playTextOnlySegment(seg);
+                    return;
+                }
+
+                if (this.timeUpdateHandler) {
+                    this.mediaEl.removeEventListener('timeupdate', this.timeUpdateHandler);
+                    this.timeUpdateHandler = null;
+                }
+
+                const start = seg.start || 0;
+                const end = seg.end > start ? seg.end : (start + 4.5);
+
+                this.state.isPlayingSegment = true;
+                this.updatePlayButtonState(true);
+
+                const musicBar = document.getElementById('musicProgressBar');
+                const lblAudioTime = document.getElementById('lblAudioTimeCurrent');
+
+                const applyPlayback = () => {
+                    try {
+                        this.mediaEl.currentTime = start;
+                        this.mediaEl.playbackRate = this.state.playbackSpeed || 1.0;
+                        const playPromise = this.mediaEl.play();
+                        if (playPromise !== undefined) {
+                            playPromise.catch(err => {
+                                console.warn("Autoplay or stream playback issue:", err);
+                            });
+                        }
+                    } catch (e) {
+                        console.warn("Seek/play exception:", e);
+                    }
+                };
+
+                if (this.mediaEl.readyState >= 1) {
+                    applyPlayback();
+                } else {
+                    const onMeta = () => {
+                        this.mediaEl.removeEventListener('loadedmetadata', onMeta);
+                        applyPlayback();
+                    };
+                    this.mediaEl.addEventListener('loadedmetadata', onMeta);
+                    this.mediaEl.load();
+                }
+
+                this.timeUpdateHandler = () => {
+                    if (!this.mediaEl) return;
+                    if (this.mediaEl.seeking) return;
+                    const curTime = this.mediaEl.currentTime;
+                    if (curTime < start - 0.5) return;
+
+                    const segDur = end - start;
+                    if (segDur > 0) {
+                        const progress = Math.max(0, Math.min(1, (curTime - start) / segDur));
+                        if (musicBar) musicBar.style.width = `${progress * 100}%`;
+                        if (lblAudioTime) {
+                            const curElapsed = Math.max(0, curTime - start);
+                            lblAudioTime.innerText = `${curElapsed.toFixed(2)}s / ${segDur.toFixed(2)}s`;
+                        }
+                    }
+
+                    if (curTime >= end) {
+                        this.mediaEl.pause();
+                        if (this.timeUpdateHandler) {
+                            this.mediaEl.removeEventListener('timeupdate', this.timeUpdateHandler);
+                            this.timeUpdateHandler = null;
+                        }
+                        this.state.isPlayingSegment = false;
+                        this.state.segmentFinished = true;
+                        this.updatePlayButtonState(false);
+                        this.handleSegmentEnded();
+                    }
+                };
+
+                this.mediaEl.addEventListener('timeupdate', this.timeUpdateHandler);
+            }
+
+            playTextOnlySegment(seg) {
+                this.clearNonStopTimer();
+                this.state.isPlayingSegment = false;
+                this.state.segmentFinished = false;
+                this.updatePlayButtonState(false);
+
+                const finishPhrase = () => {
+                    this.state.isPlayingSegment = false;
+                    this.state.segmentFinished = true;
+                    this.updatePlayButtonState(false);
+                    if (this.state.isNonStop) this.triggerNonStopDelay();
+                };
+
+                if (!this.sound.enabled) {
+                    // Muted mode skips speech but still allows Non-Stop navigation.
+                    finishPhrase();
+                    return;
+                }
+
+                if (!('speechSynthesis' in window) || typeof SpeechSynthesisUtterance === 'undefined') {
+                    this.state.segmentFinished = true;
+                    this.updatePlayButtonState(false);
+                    if (this.state.isNonStop) this.triggerNonStopDelay();
+                    return;
+                }
+
+                const phrase = String(seg && seg.en || '').trim();
+                if (!phrase) { finishPhrase(); return; }
+
+                window.speechSynthesis.cancel();
+                const utterance = new SpeechSynthesisUtterance(phrase);
+                utterance.lang = 'en-US';
+                utterance.rate = this.state.playbackSpeed || 1.0;
+                this.state.isPlayingSegment = true;
+                this.state.segmentFinished = false;
+                this.updatePlayButtonState(true);
+                utterance.onend = finishPhrase;
+                utterance.onerror = finishPhrase;
+                window.speechSynthesis.speak(utterance);
+            }
+
+            updatePlayButtonState(isPlaying) {
+                const icon = document.getElementById('iconStartNext');
+                const lbl = document.getElementById('lblStartNextText');
+                if (isPlaying) {
+                    if (icon) icon.className = "fa-solid fa-forward-step";
+                    if (lbl) lbl.innerText = "Next Segment";
+                } else if (this.state.segmentFinished || this.state.hasStarted) {
+                    if (icon) icon.className = "fa-solid fa-forward-step";
+                    if (lbl) lbl.innerText = "Next Segment";
+                } else {
+                    if (icon) icon.className = "fa-solid fa-play";
+                    if (lbl) lbl.innerText = "Start / Next";
+                }
+            }
+
+            handleSegmentEnded() {
+                this.state.segmentFinished = true;
+                this.state.isPlayingSegment = false;
+                this.updatePlayButtonState(false);
+                if (this.state.isNonStop) {
+                    this.triggerNonStopDelay();
+                }
+            }
+
+            toggleNonStopMode() {
+                this.state.isNonStop = !this.state.isNonStop;
+                const btn = document.getElementById('btnToggleNonStop');
+                const lbl = document.getElementById('lblNonStopState');
+
+                if (this.state.isNonStop) {
+                    if (btn) btn.className = "px-3 py-1.5 rounded-lg text-xs font-black transition-all bg-emerald-500 text-white shadow-sm flex items-center space-x-1.5 border border-emerald-400";
+                    if (lbl) lbl.innerText = "Non-Stop: ON";
+                    this.showToast("Non-Stop Mode Activated");
+                    this.playSegment(this.state.currentIndex);
+                } else {
+                    if (btn) btn.className = "px-3 py-1.5 rounded-lg text-xs font-black transition-all glass-subpanel text-sub hover:opacity-100 flex items-center space-x-1.5 border";
+                    if (lbl) lbl.innerText = "Non-Stop: OFF";
+                    this.clearNonStopTimer();
+                    this.showToast("Non-Stop Mode Deactivated");
+                }
+            }
+
+            setNonStopDelay(val) {
+                const parsed = parseInt(val, 10);
+                this.state.nonStopDelay = Math.max(0, Math.min(60, isNaN(parsed) ? 3 : parsed));
+            }
+
+            triggerNonStopDelay() {
+                this.clearNonStopTimer();
+                const badge = document.getElementById('badgeNonStopCountdown');
+                const lbl = document.getElementById('lblNonStopCountdown');
+                let remaining = this.state.nonStopDelay;
+
+                if (remaining <= 0) {
+                    this.nextSegment();
+                    return;
+                }
+
+                if (badge) badge.classList.remove('hidden');
+                if (lbl) lbl.innerText = remaining;
+
+                this.countdownInterval = setInterval(() => {
+                    remaining--;
+                    if (lbl) lbl.innerText = remaining;
+                    if (remaining <= 0) {
+                        this.clearNonStopTimer();
+                        this.nextSegment();
+                    }
+                }, 1000);
+            }
+
+            clearNonStopTimer() {
+                if (this.countdownInterval) {
+                    clearInterval(this.countdownInterval);
+                    this.countdownInterval = null;
+                }
+                const badge = document.getElementById('badgeNonStopCountdown');
+                if (badge) badge.classList.add('hidden');
+            }
+
+            async addCurrentSelection() {
+                const seg = this.getCurrentSegment();
+                let originalText = this.state.activeSelection.text;
+                let ruTranslation = this.state.activeSelection.translation;
+                let start = this.state.activeSelection.start;
+                let end = this.state.activeSelection.end;
+
+                if (!originalText && seg) {
+                    originalText = seg.en;
+                    ruTranslation = seg.ru;
+                    start = seg.start;
+                    end = seg.end;
+                }
+
+                if (!originalText) {
+                    this.showToast("Please select text to add");
+                    return;
+                }
+
+                if (!ruTranslation) {
+                    ruTranslation = await this.translateEnToRu(originalText);
+                }
+
+                const timeFormatted = `${formatTimecode(start)} - ${formatTimecode(end)}`;
+                const formattedLine = `${timeFormatted} = ${ruTranslation} = ${originalText}`;
+
+                this.state.txtLines.push({
+                    start,
+                    end,
+                    timeFormatted,
+                    ru: ruTranslation,
+                    en: originalText,
+                    formattedLine
+                });
+
+                this.state.wordsAddedCount++;
+                this.updateHeaderStats();
+
+                this.sound.playVocabularyAdded();
+                this.particles.burst(30);
+                this.hideTooltip();
+                this.showToast(`Added: "${originalText}" = "${ruTranslation}"`);
+                this.renderTxtLinesInModal();
+            }
+
+            updateHeaderStats() {
+                const wordsEl = document.getElementById('statWordsAddedCount');
+                if (wordsEl) wordsEl.innerText = this.state.wordsAddedCount;
+
+                const counterEl = document.getElementById('statSegmentCounter');
+                if (counterEl) {
+                    counterEl.innerText = `${this.state.segments.length > 0 ? this.state.currentIndex + 1 : 0} / ${this.state.segments.length}`;
+                }
+            }
+
+            openUploadModal(tab = 'subtitles') {
+                const modal = document.getElementById('modalUpload');
+                if (modal) modal.classList.remove('hidden');
+                this.switchUploadTab(tab);
+                this.renderTxtLinesInModal();
+            }
+
+            closeUploadModal() {
+                const modal = document.getElementById('modalUpload');
+                if (modal) modal.classList.add('hidden');
+            }
+
+            switchUploadTab(tab) {
+                const tabs = ['subtitles', 'media', 'txt'];
+                tabs.forEach(t => {
+                    const btn = document.getElementById(`tabBtn${t.charAt(0).toUpperCase() + t.slice(1)}`);
+                    const content = document.getElementById(`tabContent${t.charAt(0).toUpperCase() + t.slice(1)}`);
+                    
+                    if (t === tab) {
+                        if (btn) btn.className = "px-3 py-2 rounded-xl text-xs font-black bg-gradient-to-r from-brand-600 to-rose-500 text-white shadow-md transition-all flex items-center justify-center gap-1.5";
+                        if (content) content.classList.remove('hidden');
+                    } else {
+                        if (btn) btn.className = "px-3 py-2 rounded-xl text-xs font-black glass-subpanel text-sub hover:text-white transition-all flex items-center justify-center gap-1.5 border";
+                        if (content) content.classList.add('hidden');
+                    }
+                });
+            }
+
+            // Clean caption text consistently for TXT, SRT, SBV, VTT and other parsers.
+            // This is applied to caption text only, never to timestamp/range syntax, so
+            // the hyphen between start and end times remains intact.
+            cleanSubtitleCaption(value) {
+                return String(value || '')
+                    .replace(/<[^>]*>/g, '')
+                    .replace(/\[[^\]]*\]/g, '')
+                    .replace(/[\[\]]/g, '')
+                    .replace(/-{1,}/g, '')
+                    .replace(/_+/g, '')
+                    .replace(/\.{3,}|…+/g, '')
+                    .replace(/\s+/g, ' ')
+                    .trim();
+            }
+
+            parseSubtitleText(text) {
+                if (!text) return [];
+                
+                // Timestamped transcript exports (e.g. "0:066 seconds[Narrator]...")
+                // must be parsed by the TXT parser, which strips duplicated spoken-time
+                // labels and assigns each end time from the next caption's start.
+                if (/^\d{1,2}:\d{2}\s*\d+\s*(?:seconds?|minutes?)/im.test(text)) {
+                    return this.parseTxtSubtitleLines(text);
+                }
+                if (/^\d+:\d{2}.*(?:seconds?|minutes?|hours?)/im.test(text)) {
+                    // Timestamped TXT transcript lines can include an hours:minutes:seconds
+                    // timecode and a spoken duration prefix. Use the TXT parser so both
+                    // are handled together instead of treating the hours as caption text.
+                    return this.parseTxtSubtitleLines(text);
+                }
+
+                if (text.includes('-->')) {
+                    return this.parseSrtFile(text);
+                }
+
+                if (/\d+:\d+(?::\d+(?:\.\d+)?)?,\d+:\d+(?::\d+(?:\.\d+)?)?/.test(text)) {
+                    return this.parseSbvSubtitles(text);
+                }
+
+                const lines = text.replace(/^\uFEFF/, '').replace(/\r\n/g, '\n').replace(/\r/g, '\n').split('\n');
+                const isCustomTxt = lines.some(l => {
+                    const line = l.trim().replace(/^['"“”]+|['"“”]+$/g, '').trim();
+                    return line.includes('=');
+                });
+                
+                if (isCustomTxt) {
+                    return this.parseTxtSubtitleLines(text);
+                }
+
+                if (lines.some(line => /^(?:\d{1,2}:)?\d{1,2}:\d{2}(?:[.,]\d+)?$/.test(line.trim()))) {
+                    return this.parseYouTubeTranscript(lines);
+                }
+                
+                return this.parseTxtSubtitleLines(text);
+            }
+
+            parseCustomSecondsFormat(text) {
+                const lines = text.replace(/^\uFEFF/, '').replace(/\r\n/g, '\n').replace(/\r/g, '\n').split('\n');
+                const segments = [];
+                const defaultDuration = 4.5;
+
+                for (let i = 0; i < lines.length; i++) {
+                    const line = lines[i].trim();
+                    if (!line) continue;
+
+                    const match = line.match(/^(\d+):(\d{2})(.*?(?:seconds?|minutes?))\s*(.*)$/i);
+                    if (match) {
+                        const m = parseInt(match[1], 10);
+                        const s = parseInt(match[2], 10);
+                        const rawSecs = (m * 60) + s;
+                        
+                        let cleanText = this.cleanSubtitleCaption(match[4].replace(/^,?\s*(?:\d+\s*minutes?(?:,\s*)?)?(?:\d+\s*seconds?)?/i, ''));
+
+                        if (cleanText) {
+                            segments.push({
+                                start: rawSecs,
+                                end: rawSecs + defaultDuration,
+                                en: cleanText,
+                                ru: ''
+                            });
+                        }
+                    }
+                }
+                
+                // For timestamped transcript TXT files, the next timestamp is
+                // the exact end of the current caption. Do not cap long gaps at
+                // 8 seconds or keep the guessed default duration.
+                segments.sort((a, b) => a.start - b.start);
+                for (let i = 0; i < segments.length; i++) {
+                    if (i < segments.length - 1 && segments[i + 1].start > segments[i].start) {
+                        segments[i].end = segments[i + 1].start;
+                    } else if (!(segments[i].end > segments[i].start)) {
+                        segments[i].end = segments[i].start + defaultDuration;
+                    }
+                }
+
+                return segments;
+            }
+
+            parseSrtFile(text) {
+                if (!text) return [];
+                const clean = text.replace(/^\uFEFF/, '').replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+                const lines = clean.split('\n');
+                const segments = [];
+                let currentStart = null;
+                let currentEnd = null;
+                let currentText = [];
+
+                const finalize = () => {
+                    if (currentStart !== null && currentEnd !== null) {
+                        const rawText = this.cleanSubtitleCaption(currentText.join(' '));
+                        if (rawText) {
+                            const safeEnd = currentEnd > currentStart ? currentEnd : (currentStart + 4.0);
+                            segments.push({ start: currentStart, end: safeEnd, en: rawText, ru: '' });
+                        }
+                    }
+                    currentStart = null; currentEnd = null; currentText = [];
+                };
+
+                for (let i = 0; i < lines.length; i++) {
+                    const line = lines[i].trim();
+                    if (line.includes('-->')) {
+                        finalize();
+                        const parts = line.split('-->');
+                        if (parts.length >= 2) {
+                            currentStart = parseSrtTimestamp(parts[0]);
+                            currentEnd = parseSrtTimestamp(parts[1]);
+                        }
+                    } else if (currentStart !== null) {
+                        if (/^\d+$/.test(line)) {
+                            let isNumberHeader = false;
+                            for (let j = i + 1; j < Math.min(lines.length, i + 4); j++) {
+                                const nextTrim = lines[j].trim();
+                                if (!nextTrim) continue;
+                                if (nextTrim.includes('-->')) isNumberHeader = true;
+                                break;
+                            }
+                            if (isNumberHeader) { finalize(); continue; }
+                        }
+                        if (line && line.toLowerCase() !== 'webvtt') currentText.push(line);
+                    }
+                }
+                finalize();
+                segments.sort((a, b) => a.start - b.start);
+                return segments;
+            }
+
+            parseSbvSubtitles(text) {
+                const lines = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n').split('\n');
+                const segments = [];
+                let currentStart = null, currentEnd = null, currentText = [];
+
+                const finalize = () => {
+                    if (currentStart !== null && currentEnd !== null) {
+                        const raw = this.cleanSubtitleCaption(currentText.join(' '));
+                        if (raw) segments.push({ start: currentStart, end: currentEnd, en: raw, ru: '' });
+                    }
+                    currentStart = null; currentEnd = null; currentText = [];
+                };
+
+                for (let i = 0; i < lines.length; i++) {
+                    const line = lines[i].trim();
+                    const sbvMatch = line.match(/^(\d+:\d+(?::\d+(?:\.\d+)?)?),(\d+:\d+(?::\d+(?:\.\d+)?)?)$/);
+                    if (sbvMatch) {
+                        finalize();
+                        currentStart = parseTimecode(sbvMatch[1]);
+                        currentEnd = parseTimecode(sbvMatch[2]);
+                    } else if (currentStart !== null && line) {
+                        currentText.push(line);
+                    }
+                }
+                finalize();
+                segments.sort((a, b) => a.start - b.start);
+                return segments;
+            }
+
+            parseYouTubeTranscript(lines) {
+                const segments = [];
+                let curTimestamp = null;
+                for (let i = 0; i < lines.length; i++) {
+                    const line = lines[i].trim();
+                    if (!line) continue;
+                    if (/^(\d{1,2}:)?\d{1,2}:\d{2}/.test(line)) {
+                        curTimestamp = parseTimecode(line);
+                    } else if (curTimestamp !== null) {
+                        const cleanLine = this.cleanSubtitleCaption(line);
+                        if (cleanLine) {
+                            segments.push({ start: curTimestamp, end: curTimestamp + 4.5, en: cleanLine, ru: '' });
+                        }
+                        curTimestamp = null;
+                    }
+                }
+                segments.sort((a, b) => a.start - b.start);
+                return segments;
+            }
+
+            getMediaTypeFromReference(reference, hint = '') {
+                const value = String(reference || '').trim().replace(/^['"“”]+|['"“”]+$/g, '');
+                const lower = value.toLowerCase().split(/[?#]/)[0];
+                if (/^(music|audio)$/i.test(hint) || /\.(mp3|wav|m4a|ogg|aac|flac|opus)$/i.test(lower)) return 'music';
+                if (/^picture$/i.test(hint) || /\.(png|jpe?g|gif|webp|bmp|svg|avif|tiff?)$/i.test(lower)) return 'picture';
+                return 'video';
+            }
+
+            isMediaReference(value) {
+                const v = String(value || '').trim().replace(/^['"“”]+|['"“”]+$/g, '');
+                return /^(https?:\/\/|blob:|data:image\/)/i.test(v) || /\.(mp3|wav|m4a|ogg|aac|flac|opus|mp4|m4v|webm|mov|mkv|avi|png|jpe?g|gif|webp|bmp|svg|avif|tiff?)(?:[?#].*)?$/i.test(v);
+            }
+
+            parseTxtSubtitleLines(text) {
+                // In TXT subtitles, discard bracketed stage directions/speaker labels
+                // (for example [Narrator] or [giggling]) before parsing. If that leaves
+                // a line empty, remove it so it never becomes a subtitle segment.
+                const cleanTxtText = value => this.cleanSubtitleCaption(value);
+                const normalizedText = (text || '')
+                    .replace(/^\uFEFF/, '')
+                    .replace(/\r\n/g, '\n')
+                    .replace(/\r/g, '\n')
+                    .replace(/\[[^\]]*\]/g, '');
+                let lines = normalizedText.split('\n').filter(line => line.trim().length > 0);
+
+                // Process media declarations and remember per-segment media links.
+                // A declaration before subtitles is the initial media source; a link at
+                // the end of a subtitle line is loaded when that segment becomes active.
+                this.state.segmentMediaLinks = new Map();
+                const mediaDeclarationPattern = /^\s*(video|music|audio|picture)\s*=\s*(.*?)\s*$/i;
+                const subtitleLines = [];
+                for (const line of lines) {
+                    const declaration = line.trim().match(mediaDeclarationPattern);
+                    if (declaration) {
+                        const hint = declaration[1].toLowerCase();
+                        const url = declaration[2].replace(/^['\"“”]+|['\"“”]+$/g, '').trim();
+                        if (url && this.isMediaReference(url)) {
+                            const mediaType = hint === 'picture' ? 'picture' : (hint === 'video' ? 'video' : 'music');
+                            const name = url.split(/[/?#]/).filter(Boolean).pop() || `${hint} from TXT`;
+                            this.setMediaSource(url, mediaType, name);
+                            const urlInput = document.getElementById('inputMediaUrl');
+                            if (urlInput) urlInput.value = url;
+                        }
+                        continue;
+                    }
+
+                    const fields = line.trim().split('=');
+                    if (fields.length >= 2) {
+                        const lastField = fields[fields.length - 1].trim().replace(/^['\"“”]+|['\"“”]+$/g, '');
+                        if (this.isMediaReference(lastField)) {
+                            const mediaType = this.getMediaTypeFromReference(lastField);
+                            const name = lastField.split(/[/?#]/).filter(Boolean).pop() || (mediaType === 'picture' ? 'Picture from TXT' : 'Media from TXT');
+                            const timeMatch = line.trim().match(/^\s*(\d+(?::\d+){1,2}(?:[.,]\d+)?)\s*-\s*(\d+(?::\d+){1,2}(?:[.,]\d+)?)/)
+                                || line.trim().match(/^\s*(\d+(?::\d+){1,2}(?:[.,]\d+)?)/);
+                            if (timeMatch) {
+                                const start = parseTimecode(timeMatch[1]);
+                                this.state.segmentMediaLinks.set(Number(start.toFixed(3)), { url: lastField, type: mediaType, name });
+                            }
+                            fields.pop();
+                            subtitleLines.push(fields.join('=').trim());
+                            continue;
+                        }
+                    }
+                    subtitleLines.push(line);
+                }
+                lines = subtitleLines.filter(line => line.trim().length > 0);
+                const segments = [];
+                let pairIndex = 0;
+
+                // Handle explicit start-end TXT subtitle ranges first, for example:
+                // 0:36:0 - 0:42:8 = Ты хочешь мою душу = You want my soul
+                // Strip the time range entirely from the visible subtitle text.
+                const rangePattern = /^\s*(\d+(?::\d+){1,2}(?:[.,]\d+)?)\s*-\s*(\d+(?::\d+){1,2}(?:[.,]\d+)?)\s*=\s*(.*?)\s*$/;
+                const rangeLines = lines.map(line => {
+                    const match = line.match(rangePattern);
+                    if (!match) return null;
+                    const caption = (match[3] || '').replace(/\[[^\]]*\]/g, '').trim();
+                    if (!caption) return null;
+                    const start = parseTimecode(match[1]);
+                    const parsedEnd = parseTimecode(match[2]);
+                    return { start, end: parsedEnd > start ? parsedEnd : start + 5, caption };
+                });
+                const rangeLineCount = rangeLines.filter(Boolean).length;
+                if (rangeLineCount > 0 && rangeLineCount === lines.length) {
+                    return rangeLines.filter(Boolean).map(item => {
+                        const caption = cleanTxtText(item.caption);
+                        const eq = caption.indexOf('=');
+                        const ru = eq >= 0 ? caption.slice(0, eq).trim() : '';
+                        const en = eq >= 0 ? caption.slice(eq + 1).trim() : caption;
+                        return { start: item.start, end: item.end, en: en || ru, ru: ru || '' };
+                    }).filter(item => item.en || item.ru);
+                }
+
+                // Parse timestamped transcript TXT files such as:
+                // 0:066 seconds[Narrator] Today...
+                // 1:011 minute, 1 second[Narrator] Everyone...
+                // The timestamp is authoritative; each segment ends exactly at
+                // the next timestamp, rather than keeping a guessed fixed duration.
+                const transcriptLines = lines.map(line => {
+                    const trimmed = line.trim();
+                    const match = trimmed.match(/^(\d{1,2}:\d{2}(?::\d{2})?)(.*)$/);
+                    if (!match) return null;
+                    let caption = (match[2] || '').trim();
+                    // YouTube transcript exports often repeat the timestamp as words.
+                    caption = caption.replace(/^\d+\s*minutes?(?:\s*,?\s*\d+\s*seconds?)?\s*/i, '');
+                    caption = caption.replace(/^\d+\s*seconds?\s*/i, '');
+                    caption = caption.replace(/^,\s*/, '').trim();
+                    if (!caption) return null;
+                    const timeParts = match[1].split(':');
+                    // In transcript exports, a three-part timecode paired with an hour
+                    // label is hours:minutes:seconds (not minutes:seconds:centiseconds).
+                    const start = timeParts.length === 3 && /\b小时|\bhours?\b/i.test(match[2] || '')
+                        ? (Number(timeParts[0]) * 3600) + (Number(timeParts[1]) * 60) + Number(timeParts[2])
+                        : parseTimecode(match[1]);
+                    return { start, text: caption };
+                }).filter(Boolean);
+
+                const nonEmptyLineCount = lines.filter(line => line.trim()).length;
+                if (transcriptLines.length >= 2 && transcriptLines.length >= nonEmptyLineCount * 0.5) {
+                    transcriptLines.sort((a, b) => a.start - b.start);
+                    return transcriptLines.map((item, index) => ({
+                        start: item.start,
+                        end: index < transcriptLines.length - 1 && transcriptLines[index + 1].start > item.start
+                            ? transcriptLines[index + 1].start
+                            : item.start + 5,
+                        en: cleanTxtText(item.text),
+                        ru: ''
+                    })).filter(item => item.en);
+                }
+
+                const hasStructuredLines = lines.some(line => {
+                    const t = line.trim().replace(/^['"建筑]+|['"建筑]+$/g, '').trim();
+                    return t.includes('=');
+                });
+                if (!hasStructuredLines) {
+                    // Use the filtered subtitle lines, not normalizedText: normalizedText
+                    // still contains leading media declarations such as "picture = URL".
+                    // Keep all caption text and only split at sentence boundaries.
+                    const plainCaptionText = lines.join(' ').replace(/\s+/g, ' ').trim();
+                    let sentences = [];
+                    if (typeof Intl !== 'undefined' && Intl.Segmenter) {
+                        try {
+                            const segmenter = new Intl.Segmenter(undefined, { granularity: 'sentence' });
+                            sentences = Array.from(segmenter.segment(plainCaptionText), part => part.segment.trim()).filter(Boolean);
+                        } catch (_) { sentences = []; }
+                    }
+                    if (!sentences.length) {
+                        sentences = (plainCaptionText.match(/[^.!?。！？]+[.!?。！？]+[\"'”’»)]*|[^.!?。！？]+$/g) || [])
+                            .map(sentence => sentence.trim()).filter(Boolean);
+                    }
+                    if (sentences.length <= 1 && lines.filter(line => line.trim()).length > 1) {
+                        // A plain-text file may intentionally use one phrase per line.
+                        // Preserve each complete line instead of dropping text.
+                        sentences = lines.map(line => line.trim()).filter(Boolean);
+                    }
+                    sentences.forEach((sentence, index) => {
+                        const cleanSentence = cleanTxtText(sentence.replace(/\[.*?\]/g, ''));
+                        if (cleanSentence) {
+                            const start = index * 5;
+                            segments.push({ start, end: start + 5, en: cleanSentence, ru: '' });
+                        }
+                    });
+                    return segments;
+                }
+
+                lines.forEach(line => {
+                    let trimmed = line.trim().replace(/^['"“”]+|['"“”]+$/g, '').trim();
+                    if (!trimmed || trimmed.startsWith('#')) return;
+
+                    const eq = trimmed.indexOf('=');
+                    if (eq < 0) return;
+                    const left = trimmed.slice(0, eq).trim().replace(/^['"“”]+|['"“”]+$/g, '').trim();
+                    let right = trimmed.slice(eq + 1).trim();
+                    if (!left || !right) return;
+
+                    // Check a complete start-end range before the single-timestamp case below.
+                    // Otherwise the trailing end time can be mistaken for the start time and
+                    // leak a timestamp fragment into the visible caption.
+                    const explicitRange = left.match(/^\s*(\d+(?::\d+){1,2}(?:[.,]\d+)?)\s*-\s*(\d+(?::\d+){1,2}(?:[.,]\d+)?)\s*$/);
+                    if (explicitRange) {
+                        const fields = right.split('=');
+                        let ru = '';
+                        let en = '';
+                        if (fields.length >= 2) {
+                            ru = cleanTxtText(fields.shift().trim());
+                            en = cleanTxtText(fields.join('=').trim());
+                        } else {
+                            en = cleanTxtText(right);
+                        }
+                        const start = parseTimecode(explicitRange[1]);
+                        const parsedEnd = parseTimecode(explicitRange[2]);
+                        if (ru || en) segments.push({ start, end: parsedEnd > start ? parsedEnd : start + 5, en: en || ru, ru: ru || '' });
+                        return;
+                    }
+
+                    // A single timecode means "this phrase starts here".
+                    // Its end is assigned after parsing, using the next phrase's start.
+                    // Accept a timestamp even if an export leaves stray text such as
+                    // ':0 ' before it (example: ':0 1:59:8 = Russian = English').
+                    // Only the timestamp is used for timing; the prefix is never shown.
+                    const timestampAtEnd = left.match(/(\d+(?::\d+){1,2}(?:[.,]\d+)?)$/);
+                    if (/^\d+(?::\d+){1,2}(?:[.,]\d+)?$/.test(left) || timestampAtEnd) {
+                        right = right.replace(/\[.*?\]/g, '').trim();
+                        if (!right) return;
+                        const start = parseTimecode(timestampAtEnd ? timestampAtEnd[1] : left);
+                        const restEq = right.indexOf('=');
+                        let ru = '';
+                        let en = right;
+                        if (restEq >= 0) {
+                            ru = cleanTxtText(right.slice(0, restEq).trim().replace(/^['"“”]+|['"建筑]+$/g, ''));
+                            en = cleanTxtText(right.slice(restEq + 1).trim().replace(/^['"“”]+|['"建筑]+$/g, ''));
+                        }
+                        en = cleanTxtText(en);
+                        ru = cleanTxtText(ru);
+                        if (en || ru) segments.push({ start, end: null, en: en || ru, ru: ru || '' });
+                        return;
+                    }
+
+                    if (/^\d+(?::\d+){1,2}(?:[.,]\d+)?\s*-\s*\d+(?::\d+){1,2}(?:[.,]\d+)?$/.test(left)) {
+                        const restEq = right.indexOf('=');
+                        if (restEq >= 0) {
+                            let ru = right.slice(0, restEq).trim().replace(/^['"“”]+|['"“”]+$/g, '').trim();
+                            let en = right.slice(restEq + 1).trim().replace(/^['"“”]+|['"“”]+$/g, '').trim();
+                            ru = ru.replace(/\[.*?\]/g, '').replace(/^,?\s*(?:\d+\s*minutes?(?:,\s*)?)?(?:\d+\s*seconds?)?/i, '').trim();
+                            en = en.replace(/\[.*?\]/g, '').replace(/^,?\s*(?:\d+\s*minutes?(?:,\s*)?)?(?:\d+\s*seconds?)?/i, '').trim();
+                            
+                            const [sStr, eStr] = left.split('-').map(t => t.trim());
+                            const start = parseTimecode(sStr);
+                            const parsedEnd = parseTimecode(eStr);
+                            ru = cleanTxtText(ru);
+                            en = cleanTxtText(en);
+                            if (ru || en) segments.push({ start, end: parsedEnd > start ? parsedEnd : start + 5, en: en || ru, ru: ru || '' });
+                            return;
+                        } else {
+                            right = right.replace(/\[.*?\]/g, '').replace(/^,?\s*(?:\d+\s*minutes?(?:,\s*)?)?(?:\d+\s*seconds?)?/i, '').trim();
+                            if (!right) return;
+                            
+                            const [sStr, eStr] = left.split('-').map(t => t.trim());
+                            const start = parseTimecode(sStr);
+                            const parsedEnd = parseTimecode(eStr);
+                            right = cleanTxtText(right);
+                            if (right) segments.push({ start, end: parsedEnd > start ? parsedEnd : start + 5, en: right, ru: '' });
+                            return;
+                        }
+                    }
+
+                    let ru = cleanTxtText(left.replace(/\[.*?\]/g, '').replace(/^,?\s*(?:\d+\s*minutes?(?:,\s*)?)?(?:\d+\s*seconds?)?/i, ''));
+                    let en = cleanTxtText(right.replace(/^['"“”]+|['"“”]+$/g, '').replace(/\[.*?\]/g, '').replace(/^,?\s*(?:\d+\s*minutes?(?:,\s*)?)?(?:\d+\s*seconds?)?/i, ''));
+                    if (ru || en) {
+                        const start = pairIndex * 5;
+                        segments.push({ start, end: start + 5, en: en || ru, ru: ru || '' });
+                        pairIndex++;
+                    }
+                });
+
+                // Resolve start-only timestamps: each phrase ends exactly where
+                // the next phrase begins. Keep a short fallback for the last phrase.
+                for (let i = 0; i < segments.length; i++) {
+                    if (segments[i].end == null) {
+                        const nextStart = segments.slice(i + 1).find(segment => segment.start > segments[i].start)?.start;
+                        segments[i].end = nextStart !== undefined ? nextStart : segments[i].start + 5;
+                    }
+                    if (segments[i].end <= segments[i].start) {
+                        const nextStart = segments.slice(i + 1).find(segment => segment.start > segments[i].start)?.start;
+                        segments[i].end = nextStart !== undefined ? nextStart : segments[i].start + 5;
+                    }
+                }
+
+                return segments;
+            }
+
+            loadSubtitlesText(rawText, sourceName = 'File') {
+                const parsed = this.parseSubtitleText(rawText);
+                if (parsed.length > 0) {
+                    this.state.segments = parsed;
+                    this.state.currentIndex = 0;
+                    this.state.hasStarted = false;
+                    this.state.segmentFinished = false;
+                    this.state.isPlayingSegment = false;
+                    this.renderCurrentSegment();
+                    this.updateSubtitlesCountBadge();
+                    this.updatePlayButtonState(false);
+                    this.showToast(`Loaded ${parsed.length} segments from ${sourceName}`);
+                } else {
+                    alert("Could not parse subtitles from input. Please check the format.");
+                }
+            }
+
+            async loadSubtitlesFromLink() {
+                const input = document.getElementById('inputSubtitlesUrl');
+                const url = input ? input.value.trim() : '';
+                if (!url) {
+                    alert("Please enter a valid subtitles URL");
+                    return;
+                }
+                try {
+                    const res = await fetch(url);
+                    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                    const text = await res.text();
+                    this.loadSubtitlesText(text, url);
+                } catch (e) {
+                    alert(`Failed to load subtitles from URL: ${e.message}`);
+                }
+            }
+
+            loadSampleSubtitles() {
+                this.loadInitialSegments();
+                this.showToast("Loaded sample subtitle dialogue");
+            }
+
+            formatParsedExportTimecode(seconds) {
+                const safeSeconds = Number.isFinite(Number(seconds)) ? Math.max(0, Number(seconds)) : 0;
+                const minutes = Math.floor(safeSeconds / 60);
+                const wholeSeconds = Math.floor(safeSeconds % 60);
+                const tenths = Math.floor((safeSeconds - Math.floor(safeSeconds)) * 10 + 1e-7);
+                return `${minutes}:${wholeSeconds}:${Math.min(9, tenths)}`;
+            }
+
+            async exportParsedSubtitles(includeTranslation = false) {
+                const segments = this.state.segments || [];
+                if (!segments.length) {
+                    this.showToast('Load a subtitle or TXT file before exporting.');
+                    return;
+                }
+
+                const buttons = [
+                    document.getElementById('btnExportParsedTxt'),
+                    document.getElementById('btnExportParsedWithTranslation')
+                ].filter(Boolean);
+                const originalLabels = buttons.map(button => button.innerHTML);
+                if (includeTranslation) {
+                    buttons.forEach(button => { button.disabled = true; button.classList.add('opacity-60', 'cursor-wait'); });
+                    const target = document.getElementById('btnExportParsedWithTranslation');
+                    if (target) target.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin mr-1" aria-hidden="true"></i>Translating…';
+                }
+
+                try {
+                    const lines = [];
+                    for (let i = 0; i < segments.length; i++) {
+                        const segment = segments[i];
+                        const start = this.formatParsedExportTimecode(segment.start);
+                        const end = this.formatParsedExportTimecode(segment.end);
+                        const english = String(segment.en || '').replace(/[\r\n]+/g, ' ').trim();
+                        let russian = '';
+                        if (includeTranslation && english) {
+                            // Use the existing translation API (Google Translate, with MyMemory fallback).
+                            russian = await this.translateEnToRu(english);
+                        }
+                        lines.push(includeTranslation
+                            ? `${start} - ${end} = ${russian} = ${english}`
+                            : `${start} - ${end} =  = ${english}`);
+                        if (includeTranslation && (i + 1) % 10 === 0) {
+                            this.showToast(`Translating subtitles: ${i + 1}/${segments.length}`);
+                        }
+                    }
+
+                    const blob = new Blob([lines.join('\n') + '\n'], { type: 'text/plain;charset=utf-8' });
+                    const url = URL.createObjectURL(blob);
+                    const link = document.createElement('a');
+                    link.href = url;
+                    link.download = includeTranslation ? 'parsed_subtitles_with_translation.txt' : 'parsed_subtitles.txt';
+                    document.body.appendChild(link);
+                    link.click();
+                    link.remove();
+                    setTimeout(() => URL.revokeObjectURL(url), 1000);
+                    this.showToast(`Exported ${segments.length} parsed subtitle segments.`);
+                } catch (error) {
+                    console.error('Parsed subtitle export failed:', error);
+                    alert(`Could not export parsed subtitles: ${error.message || error}`);
+                } finally {
+                    buttons.forEach((button, index) => {
+                        button.disabled = false;
+                        button.classList.remove('opacity-60', 'cursor-wait');
+                        button.innerHTML = originalLabels[index];
+                    });
+                }
+            }
+
+            updateSubtitlesCountBadge() {
+                const el = document.getElementById('lblSubtitlesLoadedCount');
+                if (el) el.innerText = `${this.state.segments.length} segments currently loaded`;
+
+                const preview = document.getElementById('divParsedSubtitlesPreview');
+                const list = document.getElementById('parsedSubtitlesPreviewList');
+                const count = document.getElementById('lblParsedPreviewCount');
+                const total = this.state.segments.length;
+                if (count) count.textContent = `${total} segment${total === 1 ? '' : 's'}`;
+                if (preview) preview.classList.toggle('hidden', total === 0);
+                if (list) {
+                    list.innerHTML = '';
+                    this.state.segments.forEach((segment, index) => {
+                        const row = document.createElement('div');
+                        row.className = 'rounded-lg border border-brand-500/15 bg-white/40 px-2.5 py-2 text-[11px]';
+                        const time = document.createElement('div');
+                        time.className = 'font-mono font-bold text-brand-600 mb-1';
+                        time.textContent = `${formatTimecode(segment.start)} - ${formatTimecode(segment.end)} · Segment ${index + 1}`;
+                        const en = document.createElement('div');
+                        en.className = 'font-semibold';
+                        en.textContent = segment.en || '';
+                        const ru = document.createElement('div');
+                        ru.className = 'text-sub mt-0.5';
+                        ru.textContent = segment.ru || '';
+                        row.append(time, en, ru);
+                        list.appendChild(row);
+                    });
+                }
+            }
+
+            loadMediaFromLink() {
+                const input = document.getElementById('inputMediaUrl');
+                const url = input ? input.value.trim() : '';
+                if (!url) {
+                    alert("Please enter a multimedia URL");
+                    return;
+                }
+                const isAudio = /\.(mp3|wav|m4a|ogg|aac|flac|opus)(?:[?#].*)?$/i.test(url);
+                const mediaType = this.getMediaTypeFromReference(url);
+                this.setMediaSource(url, isAudio ? 'music' : mediaType, url.split('/').pop());
+                this.showToast("Media stream updated");
+            }
+
+            loadSampleVideo() {
+                this.setMediaSource(SAMPLE_VIDEO_URL, 'video', 'Big Buck Bunny (Sample)');
+                this.showToast("Loaded Sample Video");
+            }
+
+            loadSampleAudio() {
+                this.setMediaSource(SAMPLE_AUDIO_URL, 'music', 'Coffee Shop Ambience (Sample MP3)');
+                this.showToast("Loaded Sample MP3");
+            }
+
+            renderTxtLinesInModal() {
+                const container = document.getElementById('txtLinesContainer');
+                const countBadge = document.getElementById('lblTxtLinesCount');
+                const rawArea = document.getElementById('txtRawInputArea');
+
+                if (countBadge) countBadge.innerText = this.state.txtLines.length;
+                if (rawArea) {
+                    rawArea.value = this.state.txtLines.map(l => l.formattedLine).join('\n');
+                }
+
+                if (!container) return;
+                container.innerHTML = '';
+
+                if (this.state.txtLines.length === 0) {
+                    container.innerHTML = `
+                        <div class="glass-subpanel p-4 rounded-xl text-center text-xs text-sub">
+                            No TXT phrases added yet. Highlight words and click <span class="text-brand-500 font-bold">"Add"</span> in the main player or load a .txt file!
+                        </div>
+                    `;
+                    return;
+                }
+
+                this.state.txtLines.forEach((item, idx) => {
+                    const row = document.createElement('div');
+                    row.className = "glass-subpanel p-2.5 rounded-xl border flex items-center justify-between gap-3 text-xs hover:border-brand-500/50 transition-all";
+                    row.innerHTML = `
+                        <div class="flex items-center space-x-2.5 overflow-hidden flex-1 cursor-pointer" onclick="app.playSegmentFromTxt(${item.start}, ${item.end})">
+                            <span class="font-mono font-bold text-[10px] text-brand-500 bg-brand-500/10 px-1.5 py-0.5 rounded">
+                                #${idx + 1}
+                            </span>
+                            <span class="font-mono text-[10px] text-sub font-semibold">
+                                ${item.timeFormatted}
+                            </span>
+                            <span class="font-bold truncate text-brand-600 dark:text-brand-400 max-w-[35%]">
+                                ${item.ru}
+                            </span>
+                            <span class="text-sub truncate opacity-85">
+                                = ${item.en}
+                            </span>
+                        </div>
+                        <div class="flex items-center space-x-1.5 flex-shrink-0">
+                            <button onclick="app.playSegmentFromTxt(${item.start}, ${item.end})" title="Play segment" class="w-6 h-6 rounded-lg glass-subpanel text-brand-500 hover:bg-brand-500/20 flex items-center justify-center text-[10px]">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                            <button onclick="app.deleteTxtLine(${idx})" title="Delete item" class="w-6 h-6 rounded-lg glass-subpanel text-rose-500 hover:bg-rose-500/20 flex items-center justify-center text-[10px]">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </div>
+                    `;
+                    container.appendChild(row);
+                });
+            }
+
+            playSegmentFromTxt(seconds, endSeconds) {
+                if (!this.mediaEl || !Number.isFinite(Number(seconds))) return;
+                const start = Math.max(0, Number(seconds));
+                const end = Number.isFinite(Number(endSeconds)) && Number(endSeconds) > start
+                    ? Number(endSeconds)
+                    : start + 4.5;
+
+                if (this.timeUpdateHandler) {
+                    this.mediaEl.removeEventListener('timeupdate', this.timeUpdateHandler);
+                    this.timeUpdateHandler = null;
+                }
+                this.clearNonStopTimer();
+                this.state.isPlayingSegment = true;
+                this.state.segmentFinished = false;
+                this.updatePlayButtonState(true);
+
+                const playRange = () => {
+                    try {
+                        this.mediaEl.currentTime = start;
+                        this.mediaEl.playbackRate = this.state.playbackSpeed || 1.0;
+                        const playPromise = this.mediaEl.play();
+                        if (playPromise && typeof playPromise.catch === 'function') {
+                            playPromise.catch(err => console.warn('TXT segment playback issue:', err));
+                        }
+                    } catch (err) {
+                        console.warn('Could not play TXT segment:', err);
+                    }
+                };
+
+                if (this.mediaEl.readyState >= 1) {
+                    playRange();
+                } else {
+                    const onMeta = () => {
+                        this.mediaEl.removeEventListener('loadedmetadata', onMeta);
+                        playRange();
+                    };
+                    this.mediaEl.addEventListener('loadedmetadata', onMeta);
+                    this.mediaEl.load();
+                }
+
+                this.timeUpdateHandler = () => {
+                    if (!this.mediaEl || this.mediaEl.seeking || this.mediaEl.currentTime < start - 0.25) return;
+                    const duration = end - start;
+                    const elapsed = Math.max(0, Math.min(duration, this.mediaEl.currentTime - start));
+                    const bar = document.getElementById('musicProgressBar');
+                    const timeLabel = document.getElementById('lblAudioTimeCurrent');
+                    if (bar && duration > 0) bar.style.width = `${(elapsed / duration) * 100}%`;
+                    if (timeLabel) timeLabel.innerText = `${elapsed.toFixed(2)}s / ${duration.toFixed(2)}s`;
+                    if (this.mediaEl.currentTime >= end) {
+                        this.mediaEl.pause();
+                        this.mediaEl.currentTime = end;
+                        this.mediaEl.removeEventListener('timeupdate', this.timeUpdateHandler);
+                        this.timeUpdateHandler = null;
+                        this.state.isPlayingSegment = false;
+                        this.state.segmentFinished = true;
+                        this.updatePlayButtonState(false);
+                    }
+                };
+                this.mediaEl.addEventListener('timeupdate', this.timeUpdateHandler);
+            }
+
+            toggleTxtPanel() {
+                const panel = document.getElementById('tabContentTxt');
+                if (!panel) return;
+                panel.classList.toggle('hidden');
+                if (!panel.classList.contains('hidden')) this.renderTxtLinesInModal();
+            }
+
+            deleteTxtLine(index) {
+                this.state.txtLines.splice(index, 1);
+                this.state.wordsAddedCount = Math.max(0, this.state.wordsAddedCount - 1);
+                this.updateHeaderStats();
+                this.renderTxtLinesInModal();
+            }
+
+            clearTxtLines() {
+                if (this.state.txtLines.length === 0) {
+                    const rawArea = document.getElementById('txtRawInputArea');
+                    if (rawArea) rawArea.value = '';
+                    this.renderTxtLinesInModal();
+                    this.showToast('TXT is already clear');
+                    return;
+                }
+
+                this.state.txtLines = [];
+                this.state.wordsAddedCount = 0;
+
+                const rawArea = document.getElementById('txtRawInputArea');
+                if (rawArea) rawArea.value = '';
+
+                this.updateHeaderStats();
+                this.renderTxtLinesInModal();
+                this.showToast('TXT text cleared');
+            }
+
+            toggleTxtRawEditor() {
+                const editor = document.getElementById('divRawTxtEditor');
+                const btn = document.getElementById('btnToggleTxtRaw');
+                if (!editor) return;
+                const isHidden = editor.classList.contains('hidden');
+                if (isHidden) {
+                    editor.classList.remove('hidden');
+                    if (btn) btn.innerText = "Hide Editor";
+                } else {
+                    editor.classList.add('hidden');
+                    if (btn) btn.innerText = "Raw Editor";
+                }
+            }
+
+            applyRawTxtChanges() {
+                const rawArea = document.getElementById('txtRawInputArea');
+                if (!rawArea) return;
+                const text = rawArea.value;
+                const parsed = this.parseTxtSubtitleLines(text);
+
+                this.state.txtLines = parsed.map(p => ({
+                    start: p.start,
+                    end: p.end,
+                    timeFormatted: `${formatTimecode(p.start)} - ${formatTimecode(p.end)}`,
+                    ru: p.ru,
+                    en: p.en,
+                    formattedLine: `${formatTimecode(p.start)} - ${formatTimecode(p.end)} = ${p.ru} = ${p.en}`
+                }));
+
+                this.state.wordsAddedCount = this.state.txtLines.length;
+                this.updateHeaderStats();
+                this.renderTxtLinesInModal();
+                this.toggleTxtRawEditor();
+                this.showToast(`Updated ${this.state.txtLines.length} TXT items`);
+            }
+
+            exportTxtFile() {
+                if (this.state.txtLines.length === 0) {
+                    alert("No vocabulary lines added yet. Highlight words and click 'Add' first!");
+                    return;
+                }
+
+                let content = `# Generated by SubMaster Pro RU-EN\n`;
+                if (this.state.mediaUrl) {
+                    content += `${this.state.mediaType} = ${this.state.mediaUrl}\n\n`;
+                }
+
+                this.state.txtLines.forEach(item => {
+                    content += `${item.formattedLine}\n`;
+                });
+
+                const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `subtitles_phrases_${Date.now()}.txt`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+
+                this.sound.playAddSuccess();
+                this.showToast(`Exported ${this.state.txtLines.length} phrases to .txt file!`);
+            }
+
+            setupDragAndDrop() {
+                const subInput = document.getElementById('subtitlesFileInput');
+                const subDrop = document.getElementById('subtitlesDropZone');
+                if (subInput && subDrop) {
+                    subInput.addEventListener('change', (e) => {
+                        if (e.target.files && e.target.files[0]) this.readSubtitleFile(e.target.files[0]);
+                    });
+                    subDrop.addEventListener('dragover', (e) => { e.preventDefault(); subDrop.classList.add('border-brand-500'); });
+                    subDrop.addEventListener('dragleave', () => subDrop.classList.remove('border-brand-500'));
+                    subDrop.addEventListener('drop', (e) => {
+                        e.preventDefault();
+                        subDrop.classList.remove('border-brand-500');
+                        if (e.dataTransfer.files && e.dataTransfer.files[0]) this.readSubtitleFile(e.dataTransfer.files[0]);
+                    });
+                }
+
+                const mediaInput = document.getElementById('mediaFileInput');
+                const mediaDrop = document.getElementById('mediaDropZone');
+                if (mediaInput && mediaDrop) {
+                    mediaInput.addEventListener('change', (e) => {
+                        if (e.target.files && e.target.files[0]) this.handleMediaFile(e.target.files[0]);
+                    });
+                    mediaDrop.addEventListener('dragover', (e) => { e.preventDefault(); mediaDrop.classList.add('border-amber-500'); });
+                    mediaDrop.addEventListener('dragleave', () => mediaDrop.classList.remove('border-amber-500'));
+                    mediaDrop.addEventListener('drop', (e) => {
+                        e.preventDefault();
+                        mediaDrop.classList.remove('border-amber-500');
+                        if (e.dataTransfer.files && e.dataTransfer.files[0]) this.handleMediaFile(e.dataTransfer.files[0]);
+                    });
+                }
+
+                const txtInput = document.getElementById('txtFileInput');
+                if (txtInput) {
+                    txtInput.addEventListener('change', (e) => {
+                        if (e.target.files && e.target.files[0]) {
+                            const reader = new FileReader();
+                            reader.onload = (evt) => {
+                                const text = evt.target.result;
+                                const parsed = this.parseTxtSubtitleLines(text);
+                                parsed.forEach(p => {
+                                    this.state.txtLines.push({
+                                        start: p.start,
+                                        end: p.end,
+                                        timeFormatted: `${formatTimecode(p.start)} - ${formatTimecode(p.end)}`,
+                                        ru: p.ru,
+                                        en: p.en,
+                                        formattedLine: `${formatTimecode(p.start)} - ${formatTimecode(p.end)} = ${p.ru} = ${p.en}`
+                                    });
+                                });
+                                this.state.wordsAddedCount = this.state.txtLines.length;
+                                this.updateHeaderStats();
+                                this.renderTxtLinesInModal();
+                                this.showToast(`Loaded ${parsed.length} TXT lines from file`);
+                            };
+                            reader.readAsText(e.target.files[0]);
+                        }
+                    });
+                }
+
+                window.addEventListener('dragover', (e) => e.preventDefault());
+                window.addEventListener('drop', (e) => {
+                    e.preventDefault();
+                    if (e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+                        const file = e.dataTransfer.files[0];
+                        const name = file.name.toLowerCase();
+                        if (name.endsWith('.srt') || name.endsWith('.vtt') || name.endsWith('.sbv')) {
+                            this.readSubtitleFile(file);
+                        } else if (file.type.startsWith('video') || file.type.startsWith('audio') || /\.(mp4|webm|mp3|wav|m4a|ogg|mkv)$/i.test(name)) {
+                            this.handleMediaFile(file);
+                        } else if (name.endsWith('.txt')) {
+                            const reader = new FileReader();
+                            reader.onload = (evt) => {
+                                const text = evt.target.result;
+                                this.loadSubtitlesText(text, file.name);
+                            };
+                            reader.readAsText(file);
+                        }
+                    }
+                });
+            }
+
+            setupGlobalKeyboard() {
+                document.addEventListener('keydown', (e) => {
+                    if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) {
+                        return;
+                    }
+                    if (e.key === 'Escape') {
+                        this.closeUploadModal();
+                    } else if (e.key === 'ArrowRight') {
+                        e.preventDefault();
+                        this.nextSegment();
+                    } else if (e.key === 'ArrowLeft') {
+                        e.preventDefault();
+                        this.previousSegment();
+                    } else if (e.key === ' ' || e.code === 'Space') {
+                        e.preventDefault();
+                        this.startNextSegment();
+                    } else if (e.key === 'r' || e.key === 'R' || e.key === 'к' || e.key === 'К') {
+                        e.preventDefault();
+                        this.replaySegment();
+                    }
+                });
+            }
+
+            readSubtitleFile(file) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    this.loadSubtitlesText(e.target.result, file.name);
+                };
+                reader.readAsText(file);
+            }
+
+            handleMediaFile(file) {
+                const objectUrl = URL.createObjectURL(file);
+                const isAudio = file.type.startsWith('audio') || /\.(mp3|wav|m4a|ogg|aac)$/i.test(file.name);
+                this.setMediaSource(objectUrl, isAudio ? 'music' : 'video', file.name);
+                this.showToast(`Loaded local media: ${file.name}`);
+            }
+
+            showToast(msg) {
+                const container = document.getElementById('toastContainer');
+                if (!container) return;
+                const toast = document.createElement('div');
+                toast.className = "glass-panel px-4 py-2.5 rounded-xl border border-brand-500/30 text-xs font-bold text-sub shadow-2xl flex items-center space-x-2 transform translate-y-2 opacity-0 transition-all duration-200";
+                toast.innerHTML = `<i class="fa-solid fa-sparkles text-amber-500"></i> <span>${msg}</span>`;
+                container.appendChild(toast);
+
+                setTimeout(() => {
+                    toast.classList.remove('translate-y-2', 'opacity-0');
+                    toast.classList.add('translate-y-0', 'opacity-100');
+                }, 10);
+
+                setTimeout(() => {
+                    toast.classList.add('opacity-0', 'translate-y-2');
+                    setTimeout(() => toast.remove(), 200);
+                }, 2800);
+            }
+        }
+
+        window.app = new SubtitleApp();
+        document.addEventListener('DOMContentLoaded', () => {
+            if (!window.app) window.app = new SubtitleApp();
+        });
+    </script>
+</body>
+</html>
