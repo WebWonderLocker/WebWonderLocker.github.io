@@ -1,0 +1,12 @@
+﻿video = funny_shorts/1/woman important quality.mp4
+
+0:00:00 - 0:03:00 = "Итак... какие самые важные качества в женщине?" = "So... what are the most important qualities in a woman?"
+0:03:00 - 0:06:00 = "Во-первых, она должна быть независимой и помогать по дому." = "First... She should be independent and help around the house."
+0:06:00 - 0:07:50 = "Хорошо, справедливо." = "Okay, fair."
+0:07:50 - 0:09:80 = "Во-вторых, она должна тебя смешить." = "Second... She should make you laugh."
+0:09:80 - 0:11:50 = "Это важно." = "That's important."
+0:11:50 - 0:15:80 = "В-третьих, она должна быть тем, кому ты можешь доверять." = "Third... She should be someone you can trust."
+0:15:80 - 0:17:20 = "Абсолютно." = "Absolutely."
+0:17:20 - 0:22:20 = "И в-четвертых... она должна быть потрясающей в постели." = "And fourth... She should be amazing in bed."
+0:24:00 - 0:26:00 = "Хорошо... а что самое важное?" = "Alright... and what's the MOST important one?"
+0:26:00 - 0:29:80 = "Чтобы эти четыре женщины никогда не встретились друг с другом." = "That these four women... never meet each other."

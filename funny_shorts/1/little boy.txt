@@ -1,0 +1,16 @@
+﻿video = funny_shorts/1/little boy.mp4
+
+0:00:00 - 0:06:50 = Маленький мальчик гребет листья на улице со своим дедушкой, когда замечает дождевого червя, пытающегося забраться обратно в свою норку. = A little boy is outside raking leaves with his grandpa when he spots an earthworm trying to get back into its hole. 
+0:06:50 - 0:11:80 = Мальчик говорит: «Дедушка, спорим, я смогу засунуть этого червя обратно в норку». = The kid says, "Grandpa, I bet I can put that worm back in the hole." 
+0:11:80 - 0:20:50 = Дедушка смеется: «Спорим на 5 долларов, что не сможешь, этот червь слишком извивается, а норка слишком мала». = Grandpa laughs, "I'll bet you $5 you can't, that worm is too wiggly and that hole is too small." 
+0:20:50 - 0:24:50 = Мальчик убегает в дом и возвращается с баллончиком лака для волос. = The boy runs inside and comes back with a can of hairspray. 
+0:24:50 - 0:30:00 = Он брызгает на червя, пока тот не затвердеет, а затем просовывает его прямо в норку. = He sprays the worm until it's stiff, then slides it right into the hole. 
+0:30:00 - 0:34:00 = Дедушка выглядит потрясенным и протягивает ему 5 долларов. = Grandpa looks shocked and hands him $5. 
+0:34:00 - 0:38:00 = Затем дедушка хватает лак для волос и бежит в дом. = Then grandpa grabs the hairspray and runs into the house. 
+0:38:00 - 0:43:00 = Через 30 минут он возвращается и дает мальчику еще 5 долларов. = 30 minutes later, he comes back and gives the boy another $5. 
+0:43:00 - 0:47:00 = Мальчик говорит: «Дедушка, ты мне уже заплатил!» = The kid says, "Grandpa, you already paid me!" 
+0:47:00 - 0:51:00 = Дедушка отвечает: «Я знаю, это от бабушки!» = Grandpa said, "I know, this one's from grandma!"
+
+
+
+
