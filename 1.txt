@@ -1,0 +1,475 @@
+music = 1.mp3
+0:000 secondsWelcome, dear listeners, to another case from the drawing room detectives. Today, we begin a brand new Sherlock Holmes mystery, the puzzle of the poisoned ink.
+0:1111 secondsWhen a series of anonymous letters start arriving at London's leading newspapers, each predicting scandals before they
+0:1818 secondshappen, Holmes and Watson are drawn into a dangerous game of media manipulation and political sabotage.
+0:2626 secondsBefore we dive in, we'd love to hear from you. Tell us where in the world are you watching from. Leave a comment below
+0:3333 secondsand let us know. Now settle in and let the mystery begin.
+Chapter 2: The burned editor
+0:4040 secondsChapter 1, the burned editor. It was during one of those intervals of relative quietude which occasionally
+0:4747 secondspunctuated our lives at Baker Street that I happened to find Sherlock Holmes deep in contemplation and surrounded by
+0:5454 secondsthe clutter of newspapers, monographs, and chemical apparatus. The spring light filtered dimly through the half-closed
+1:021 minute, 2 secondsblinds, casting narrow bands of gold across the Persian slipper, the violin case, and the restless tapping of
+1:101 minute, 10 secondsHolmes's long fingers upon the arm of his chair. You have the look of a man undermployed, Holmes, said I, taking the
+1:181 minute, 18 secondschair opposite. And you, Watson, have the gate of one who has this morning discharged his final patient, he replied without glancing up.
+1:281 minute, 28 secondsI deduce, moreover, from the absence of dust upon your cuffs and the faint aroma of formaldahhide clinging to your left
+1:361 minute, 36 secondslapel that you have paid a brief call to the laboratory before setting out. I laughed. Your talents, Holmes, continued
+1:451 minute, 45 secondsto render observation a most unequal contest. He smiled faintly, but whatever reply he might have offered was foresstalled by the arrival of Mrs.
+1:551 minute, 55 secondsHudson bearing a visiting card upon a tray. "A Mr. Harold Littton to see you, sir," she announced.
+2:042 minutes, 4 secondsHolmes took the card, studied it, and motioned for the gentleman to be admitted.
+2:102 minutes, 10 secondsOur visitor proved to be a man of upright carriage and journalistic bearing, neatly dressed, though plainly agitated.
+2:182 minutes, 18 seconds"Mr. Holmes," he began, "I am editor-inchief of the London Gazette. I come to you not with a matter of liel or
+2:252 minutes, 25 secondsgossip, but something rather more insidious. I have in my possession a letter which has done me personal harm,
+2:332 minutes, 33 secondsand threatens, I believe, to do far worse to the public good. Pray be seated, said Holmes, with interest. I
+2:412 minutes, 41 secondstake it your hand has been injured in the course of this business. Indeed, Littton replied, removing the glove with some difficulty.
+2:502 minutes, 50 seconds3 days ago, I received an unsigned envelope bearing no indication of origin.
+2:562 minutes, 56 secondsIt was addressed to me alone, and the letter within was composed in a curious, shimmering ink. Upon touching it, I
+3:053 minutes, 5 secondsexperienced a stinging sensation which soon gave way to these burns. My physician was at a loss to identify the
+3:113 minutes, 11 secondssubstance. Curious, said Holmes, rising to inspect the hand more closely. And the contents of the letter, Littton
+3:203 minutes, 20 secondshesitated, then replied, "It detailed with alarming precision two political scandals which was subsequently revealed
+3:293 minutes, 29 secondsin rival papers within 48 hours. One concerned a naval procurement irregularity, the other an affair of moral compromise in a government office.
+3:403 minutes, 40 secondsWere you in possession of those facts at the time? I was not, said Littton gravely. The events had not yet broken.
+3:503 minutes, 50 secondsThe information was preient and evidently intended for my eyes only.
+3:553 minutes, 55 secondsHolmes steepled his fingers beneath his chin and gazed thoughtfully at the hearth. Poisoned ink delivering precise
+4:034 minutes, 3 secondspolitical prophecy. He mused, "This, Watson, is no common hoax. You did well to come.
+Chapter 3: Venomous correspondence
+4:104 minutes, 10 secondsChapter 2. The venomous correspondence. The morning after our meeting with Mr.
+4:164 minutes, 16 secondsLittton found Holmes and me navigating the crowded thoroughfare of Fleet Street, where the air was thick with the
+4:234 minutes, 23 secondssmell of ink and damp newsprint. The pavements bustled with errand boys darting between delivery carts, their
+4:314 minutes, 31 secondsarms filled with freshly printed additions. Vendors shouted the latest headlines, and the distant clatter of
+4:384 minutes, 38 secondsprinting presses rumbled like an underground storm. The offices of the London Gazette occupied a stone building
+4:474 minutes, 47 secondswith tall soot darkened windows and a brass plaque near the entrance that gleamed dullly in the weak sunlight.
+4:564 minutes, 56 secondsMr. Littton awaited us inside, looking no less troubled than he had the day before. I have kept the letter and its
+5:045 minutes, 4 secondsenvelope exactly as I received them, he said, leading us past rows of desks where clarks and journalists worked in hurried silence.
+5:145 minutes, 14 secondsThey are locked away in my office safe.
+5:175 minutes, 17 secondsHolmes's sharp gaze roved over the newsroom as we passed through. His eyes lingered on a young man seated near the
+5:245 minutes, 24 secondsrear who was examining a sheath of proofs with unusual intensity.
+5:295 minutes, 29 secondsHolmes said nothing, but filed the observation away, as was his habit.
+5:355 minutes, 35 secondsLittton ushered us into his office, a cramped, but orderly space lined with bookshelves and filing cabinets. He
+5:425 minutes, 42 secondsproduced the letter from a locked drawer, setting it gingerely upon the desk before us. Holmes did not touch it
+5:505 minutes, 50 secondsat once. Instead, he bent low over the paper, inhaling lightly.
+5:565 minutes, 56 secondsThere is a faint but distinct odor, he murmured. Something sharp and vegetital with a trace of metallic bitterness, not
+6:046 minutes, 4 secondsa commercial ink. That much is clear. He drew a small magnifying lens from his pocket and examined the lettering. The
+6:126 minutes, 12 secondshandwriting, though neat, bore obvious signs of deliberate disguise.
+6:186 minutes, 18 secondsThe slant was inconsistent, the loops overly large, and the pressure on certain downstrokes betrayed an
+6:266 minutes, 26 secondsunnatural tension. "The penmanship was masked," Holmes said aloud. "But the writer is right-handed and accustomed to
+6:346 minutes, 34 secondswriting quickly. These hesitations suggest forced alterations." I watched as he lifted a single corner
+6:426 minutes, 42 secondsof the letter with the tip of his pencil, and studied the paper itself. It was thick and fibrous with a watermark that read Cascadura Mill, Par Province.
+6:546 minutes, 54 secondsBrazilian manufacturer, Holmes said with interest. An uncommon choice for stationary in London. Littton, still
+7:027 minutes, 2 secondsholding his injured hand protectively at his side, cleared his throat.
+7:087 minutes, 8 secondsI should also tell you, Mr. Holmes, that mine is not the only office to have received such a letter.
+7:147 minutes, 14 secondsHolmes straightened at once. "Indeed." "Yes," Littton said. "In the last two weeks, three other editors, Mr. Glenroy
+7:237 minutes, 23 secondsat the Herald, Mr. Morris at the Evening Standard, and Miss Clarendon at the Weekly Record, each received similar
+7:307 minutes, 30 secondsmissives. Each one predicted a different political or social scandal, and each prediction, I regret to say, came to
+7:387 minutes, 38 secondspass within 48 hours. Holmes's expression darkened and the content of the letters similar
+7:467 minutes, 46 secondsin tone and style. Littton nodded unfailingly so short declarative statements with precise timing. No salutations, no signatures.
+7:587 minutes, 58 secondsAnd were they all written in the same ink? I believe so, Littton replied, though I cannot speak to the matter of
+8:058 minutes, 5 secondsBurns in the other cases. From his coat pocket, Holmes retrieved a small glass vial and a metal scraper. With practiced
+8:148 minutes, 14 secondscare, he collected a trace amount of the ink from the edge of the paper and sealed it away for later analysis. I
+8:228 minutes, 22 secondsshall need to examine the letters from the other newspapers, Holmes said at last. And I would like to speak with
+8:288 minutes, 28 secondstheir recipients if possible. Of course, Littton agreed. I can make introductions.
+8:368 minutes, 36 secondsHolmes placed the vial carefully in his inner pocket, then gave me a glance that told me our day was far from over.
+8:448 minutes, 44 secondsAs we stepped back into the noise and bustle of Fleet Street, Holmes's eyes glinted with determination.
+8:518 minutes, 51 seconds"Watson," he said, "this case is not merely a curiosity. We are dealing with a hand skilled in both deception and
+9:009 minuteschemistry. And I suspect the true motive lies not in the ink, but in the message it seeks to deliver. Without waiting for
+9:099 minutes, 9 secondsa reply, he hailed a passing handsome cab, and we set off toward our next destination.
+Chapter 4: A scandal foretold
+9:179 minutes, 17 secondsChapter 3, A Scandal forld. The following afternoon found Holmes and me seated in the office of Mr. Alfred
+9:249 minutes, 24 secondsGlenroy, editor of the Herald, a rival yet respected publication not far from the Gazette. Glenroy was a
+9:329 minutes, 32 secondsbarrel-chested man with a booming voice and a reputation for publishing hard truths without fear or favor. On this
+9:419 minutes, 41 secondsparticular day, however, there was a weariness about him that could not be ignored. "I confess, Mr. Holmes," he
+9:489 minutes, 48 secondssaid, holding up a bandaged hand that mirrored Littton's injuries. I thought the burns were some unfortunate reaction to the paper itself.
+9:589 minutes, 58 secondsOnly when Littton reached out to me did I begin to suspect something more sinister.
+10:0410 minutes, 4 secondsHolmes, seated with one leg crossed over the other, examined the dressing with clinical interest. You opened the letter
+10:1210 minutes, 12 secondsin the same manner, bare-handed, without hesitation.
+10:1510 minutes, 15 secondsPrecisely. The envelope arrived last week. No return address, no markings. I tore it open as I would any correspondence. Within seconds, my
+10:2410 minutes, 24 secondsfingers were burning as though I had plunged them into lie. Holmes nodded, his mind already moving along its
+10:3110 minutes, 31 secondsinvisible tracks. "And the contents?" Glenroy gestured to a folder on his desk. Holmes retrieved it carefully,
+10:4010 minutes, 40 secondsopening the cover to reveal another single sheet of paper, the same thick Brazilian stock as before, with the now
+10:4810 minutes, 48 secondsfamiliar iridescent ink. The message was brief and chilling.
+10:5410 minutes, 54 secondsBy the time you read this, the member for South Kennington will have resigned in disgrace. The story breaks tomorrow.
+11:0211 minutes, 2 secondsHolmes's eyes narrowed. And did it? It did. Glenroy replied grimly. A bribery
+11:1011 minutes, 10 secondsscandal tied to railway contracts. We had the story confirmed by noon the following day. Holmes fell silent for a
+11:1811 minutes, 18 secondslong moment, studying the letter as though willing it to yield its secrets.
+11:2311 minutes, 23 secondsThe timing is precise, he murmured at last. The letters arrive just before the scandal becomes public knowledge, giving
+11:3111 minutes, 31 secondsthe appearance of foresight, though in truth the sender must possess advanced knowledge of these events before they unfold.
+11:4011 minutes, 40 secondsYou believe the writer is connected to the sources of these scandals? I asked.
+11:4611 minutes, 46 secondsUndoubtedly, Holmes said, either as an insider or through a network of informants.
+11:5311 minutes, 53 secondsGlenroy cleared his throat. There is something else. Another letter arrived this morning. At this, Holmes's head lifted sharply.
+12:0512 minutes, 5 secondsYou have it here. Glenroy opened a locked drawer and produced the latest envelope, still sealed and handled with great caution.
+12:1612 minutes, 16 seconds"I did not dare open it after what happened before," he said. Holmes examined the exterior.
+12:2412 minutes, 24 secondsThe handwriting matched the earlier letters with the same disguised slant and forced loops. The paper bore the
+12:3112 minutes, 31 secondssame faintly metallic odor. "With your permission," Holmes said, withdrawing a pair of gloves from his coat pocket.
+12:4012 minutes, 40 seconds"By all means," Glenroy replied, leaning back.
+12:4512 minutes, 45 secondsHolmes slit the envelope open with the edge of a letter opener, carefully sliding the single sheet free.
+12:5212 minutes, 52 secondsHe read it aloud. Diplomatic trust will fracture before the ink dries on the treaty. Watch the headlines within 48 hours. Glenroyy's face pald.
+13:0513 minutes, 5 secondsSurely not the Anglo-Uropean accord. The negotiations have been the crown's chief concern for months. Holmes did not
+13:1413 minutes, 14 secondsanswer immediately. Instead, he read the letter a second time, then folded it neatly and returned it to the envelope.
+13:2213 minutes, 22 seconds"Tell me, Mr. Glenroy," he said. "At what hour did this arrive?" Shortly after 8 this morning, Glenroy
+13:3013 minutes, 30 secondsreplied. Holmes glanced at his watch, then turned to me. "Watson, make note of
+13:3713 minutes, 37 secondsthe delivery time. If I am correct, these letters are dispatched with extraordinary calculation. The sender is
+13:4513 minutes, 45 secondsnot reacting to the scandals after they happen, but is timing the arrival to anticipate them by mere hours or days.
+13:5413 minutes, 54 secondsAnd the ink, Holmes, I asked, "Surely such a substance is not easy to procure." "Indeed not," Holmes said with
+14:0114 minutes, 1 secondquiet satisfaction. "Which is why our next visit shall be to the few chemists in London who specialize in exotic plant
+14:0914 minutes, 9 secondstoxins." Before we departed, Holmes paused at the door and turned back to Glenroy.
+14:1614 minutes, 16 seconds"Should you receive another letter, do not open it," he instructed. "Send word to me at once."
+14:2414 minutes, 24 secondsGlenroy nodded solemnly. As we stepped back out into the cold afternoon light, Holmes's expression grew more focused than ever.
+Chapter 5: Ink analysis
+14:3414 minutes, 34 secondsChapter 4. The ink analysis. The following evening found Holmes deep in the heart of his laboratory work. The
+14:4314 minutes, 43 secondssitting room at Baker Street transformed into a chaotic display of glasswear, pipets, and steaming flasks. The
+14:5114 minutes, 51 secondsfamiliar sense of iodine and alcohol hung heavy in the air, mingling with something more acrid and unfamiliar. I
+14:5914 minutes, 59 secondssat by the window, observing him with a mixture of fascination and resignation.
+15:0615 minutes, 6 secondsFor the better part of 2 hours, Holmes had moved from bench to microscope, then back again, stopping only to jot rapid notes into his worn leather notebook.
+15:1715 minutes, 17 secondsThe samples from both Mr. Littton and Mr. Glenroyy's letters lay in petry dishes upon the table, alongside thin
+15:2415 minutes, 24 secondsglass slides and strips of blotting paper. Holmes held one of the stained slides up to the gas light and examined
+15:3215 minutes, 32 secondsit closely through a small brass microscope.
+15:3615 minutes, 36 seconds"A curious composition, Watson," he said at last, without lifting his gaze. "Not the work of any commercial ink
+15:4415 minutes, 44 secondsmanufacturer. That much is certain." I rose and moved closer, peering over his shoulder. "What do you find?"
+15:5115 minutes, 51 secondsThe ink appears to contain a suspension medium of glycerin, most likely to prevent the toxin from drying too
+15:5915 minutes, 59 secondsquickly, he replied. The pigment is a mixture of indigo and a mineral-based dye, probably to create that unusual
+16:0716 minutes, 7 secondsiridescence we observed. But it is the third component that interests me most.
+16:1316 minutes, 13 secondsHe pointed to a small beaker on the table where a cloudy liquid swirled faintly under the light.
+16:2016 minutes, 20 secondstraces of a South American plant extract, Holmes continued. Derived, if I'm not mistaken, from the sap of the
+16:2816 minutes, 28 secondseuphoria latisima, commonly known in certain regions as the devil's milk, I frowned. A dangerous substance indeed,
+16:3716 minutes, 37 secondsHolmes said, setting the slide aside. In its concentrated form, the latex from this plant can produce severe skin
+16:4516 minutes, 45 secondsirritation and chemical burns upon contact. Natives in parts of the Amazon basin use it in ceremonial rituals,
+16:5316 minutes, 53 secondsoften to mark initiates or drive away intruders from sacred grounds. I could not suppress a shudder.
+17:0217 minutes, 2 secondsBut why use it here? Surely there are easier means of discouraging unwanted readers.
+17:0917 minutes, 9 secondsHolmes smiled faintly. That, Watson, is where the true ingenuity of the matter lies.
+17:1617 minutes, 16 secondsHe crossed the room to where he had set up a small retort and began heating another sample over a spirit lamp.
+17:2317 minutes, 23 seconds"Consider the effect," he said as he worked. "The poison is not lethal. It is painful, but not permanently disabling.
+17:3117 minutes, 31 secondsIts only certainty is that the person who opens the letter will be marked by visible injury, blisters, burns,
+17:3817 minutes, 38 secondsredness, all impossible to conceal for several days afterward." He glanced at me, his expression sharpening. The
+17:4617 minutes, 46 secondsresult, my dear Watson, is that only the intended recipient, the editor, would open and handle the letter personally.
+17:5417 minutes, 54 secondsSubordinates, clerks, and office boys would quickly learn to leave these envelopes untouched for fear of injury.
+18:0318 minutes, 3 secondsI nodded slowly as understanding dawned.
+18:0718 minutes, 7 secondsSo the writer ensures that each letter reaches the hands of its target. The burns serve as both a deterrent and a
+18:1418 minutes, 14 secondssignature. Precisely, Holmes said, an unusual method of targeted delivery, but remarkably effective. The editor
+18:2218 minutes, 22 secondsreceives the message, suffers the injury, and perhaps more importantly, remembers the sender with every painful
+18:2918 minutes, 29 secondsreminder that lingers on the skin. He turned back to his analysis, removing the beaker from the flame and holding it
+18:3718 minutes, 37 secondsup to the light. The liquid had settled into two distinct layers. The toxin is soluble in alcohol but not in water, he
+18:4618 minutes, 46 secondsmurmured. Interesting. That will help narrow down its preparation.
+18:5218 minutes, 52 secondsI observed him for another moment, then asked. And what of the paper? That Brazilian watermark. Surely that too is significant.
+19:0119 minutes, 1 secondHolmes gave a curt nod.
+19:0419 minutes, 4 secondsIndeed it is. I have already made inquiries to certain paper merchants who deal in imported stocks. There are only
+19:1219 minutes, 12 secondsa handful in London with access to material from Par Province. I expect word from them by morning.
+19:2119 minutes, 21 secondsAs Holmes began cleaning his equipment, a light knock sounded at the door. Mrs.
+19:2619 minutes, 26 secondsHudson entered with a telegram upon a silver tray. Holmes took the slip of paper, read it swiftly, and smiled with satisfaction.
+19:3619 minutes, 36 secondsAh, excellent, he said. Confirmation from one of my contacts at the docks. A shipment of Brazilian goods arrived 3
+19:4319 minutes, 43 secondsweeks ago. One of the recipients paid in foreign coin and requested a large order of Cascadura mill paper. He folded the telegram and slipped it into his pocket.
+19:5419 minutes, 54 secondsCome, Watson, he said briskly. The web tightens. We have identified the poison, the paper, and the means of delivery.
+20:0220 minutes, 2 secondsNow it remains to uncover the hand that guides them all. With that, Holmes reached for his coat and hat, already
+20:1120 minutes, 11 secondsmoving toward the door with the relentless energy I had come to know so well. Chapter 5. The shadow in Fleet
+Chapter 6: Shadows in Fleet Street
+20:2020 minutes, 20 secondsStreet. The following evening found Holmes and me positioned in a narrow alleyway off Fleet Street, pressed into
+20:2720 minutes, 27 secondsthe shadows between a tobaconist's shop and a shuttered print works. The gas lights along the pavement glowed faintly
+20:3420 minutes, 34 secondsin the gathering dusk, their flickering light casting long, uneven shadows across the cobblestones. The air smelled
+20:4220 minutes, 42 secondsof ink, damp wool, and the distant tang of cold smoke. Holmes stood motionless
+20:4920 minutes, 49 secondsbeside me, his gaze fixed on the entrance to the London Gazette building across the street. His collar was turned
+20:5620 minutes, 56 secondsup against the cold, and in the dim light his sharp profile took on a strangely hawkish quality. "We are
+21:0521 minutes, 5 secondslooking for a man who favors dusk for his errands," Holmes murmured barely above a whisper. "A creature of habit,
+21:1221 minutes, 12 secondsWatson. Such men always are." For the past two evenings, Holmes had observed the comingings and goings of Fleet
+21:1921 minutes, 19 secondsStreet with quiet intensity, noting the movement of messengers, clerks, and delivery boys as they bustled in and out of the newspaper offices.
+21:2821 minutes, 28 secondsBut tonight, he had insisted we arrive earlier, convinced that the sender of the poisoned letters would make another
+21:3521 minutes, 35 secondsappearance. At precisely 5, Holmes gave a slight nudge to my arm. There," he
+21:4221 minutes, 42 secondssaid quietly. Emerging from the far end of the street was a solitary figure. The man walked with deliberate slowness,
+21:5021 minutes, 50 secondspausing briefly at each corner as though checking for observers.
+21:5521 minutes, 55 secondsHe wore a long dark coat and gloves despite the mildness of the evening air.
+22:0122 minutes, 1 secondHis wide-brimmed hat was pulled low over his brow, obscuring much of his face. We watched as the man approached the entrance to the herald offices.
+22:1222 minutes, 12 secondsWith gloved hands, he withdrew a small envelope from inside his coat and slipped it through the brass letter box before continuing along the street.
+22:2322 minutes, 23 secondsHolmes's eyes narrowed.
+22:2622 minutes, 26 seconds"Take note of the gate, Watson, limp in the left leg, favoring the right foot.
+22:3022 minutes, 30 secondsPossibly an old injury." The figure moved on, stopping at the door of the weekly record. Another envelope was
+22:3722 minutes, 37 secondsdeposited, followed by a cautious glance up and down the street. Satisfied that he remained unobserved, the man turned
+22:4522 minutes, 45 secondsand began heading eastward toward Lgate Circus. Holmes stepped back into the alleyway. I shall remain here and continue my inquiries, he said swiftly.
+22:5722 minutes, 57 secondsYou, Watson, will follow our friend.
+22:5922 minutes, 59 secondsKeep to the shadows. observe where he goes, whom he meets, and if possible, where he retires for the night." I
+23:0823 minutes, 8 secondsnodded, my heart already quickening with the thrill of the chase. "Do not engage him," Holmes added, laying a firm hand
+23:1623 minutes, 16 secondson my shoulder. "Simply watch. Report back here within the hour." Without another word, I slipped into the growing
+23:2323 minutes, 23 secondscrowd and began tailing the man at a cautious distance. The figure moved with purpose, but not with haste, weaving
+23:3123 minutes, 31 secondsbetween horsedrawn cabs and newspaper vendors. More than once he paused to look behind him, but I kept well out of
+23:3923 minutes, 39 secondssight, ducking behind gas lamps and doorways whenever he turned. Meanwhile, Holmes remained on Fleet Street, making
+23:4623 minutes, 46 secondshis rounds among the small printing shops and ink suppliers. Earlier that day, he had prepared a list of vendors
+23:5323 minutes, 53 secondswho dealt in exotic pigments and imported papers. Knowing his methods, as I did, I was certain he would begin
+24:0124 minutes, 1 secondposing discreet questions to shopkeepers and stationers, inquiring about recent customers with unusual requests. As I
+24:0924 minutes, 9 secondsfollowed our quarry down a side street near St. Bride's Church, he disappeared through a narrow iron gate leading to
+24:1624 minutes, 16 secondsthe rear entrance of an old boarding house. I waited a prudent distance away, noting the address and the name on the
+24:2424 minutes, 24 secondsfaded sign above the door. Satisfied that I had learned all I could for the moment, I retraced my steps back toward
+24:3124 minutes, 31 secondsFleet Street to find Holmes. "When I returned to our designated meeting point, I found him emerging from a small
+24:3924 minutes, 39 secondsshop with a self-satisfied smile." "Excellent timing, Watson," he said, drawing me into the shadow of the alley
+24:4624 minutes, 46 secondsonce more. I believe we are closing in on our elusive letter writer. I recounted my observations, including the
+24:5324 minutes, 53 secondsman's destination and the details of the boarding house. Holmes listened with keen interest. Very good, Watson. Very
+25:0125 minutes, 1 secondgood indeed. Tomorrow morning we shall pay a visit to Langley House, but first I have one or two final questions for a
+25:0925 minutes, 9 secondscertain ink merchant who may prove most illuminating. And with that we withdrew into the night, the mystery deepening
+25:1725 minutes, 17 secondsaround us like the London fog that rolled steadily in from the tempames.
+Chapter 7: The printer's clue
+25:2325 minutes, 23 secondsChapter 6. The printer's clue. The next morning found Holmes and me walking through a warren of narrow streets south
+25:3225 minutes, 32 secondsof Fleet Street, where the air was thick with the mingled smells of ink, glue, and damp wood. The shop fronts here were
+25:4125 minutes, 41 secondsmodest affairs, their windows cluttered with samples of stationery, printing blocks, and dusty bottles of ink in
+25:4925 minutes, 49 secondsevery imaginable shade. Holmes paused before a small, dimly lit shop, wedged between a tobaconist and a cobbler. The
+25:5825 minutes, 58 secondsfaded sign above the door read, "American Sons, Printers, and Stationers since 1842."
+26:0626 minutes, 6 secondsThe interior was cramped and smelled of linseed oil and varnish. Wooden trays of typeface lined the walls, and stacks of
+26:1526 minutes, 15 secondspaper lay bundled in the corners. Behind the counter stood an elderly man with ink stained fingers and a pair of
+26:2226 minutes, 22 secondscracked spectacles perched on the end of his nose. "Good morning to you," the man said, squinting at us. "What can I do
+26:3126 minutes, 31 secondsfor you, gentlemen?" Holmes stepped forward with the easy confidence that often won him cooperation in such
+26:3826 minutes, 38 secondsplaces. Mr. Merik, I presume. I am Sherlock Holmes, and this is Dr. Watson.
+26:4526 minutes, 45 secondsWe are investigating a matter which may touch upon your line of work. The printer's brows rose. Indeed.
+26:5426 minutes, 54 secondsWell, I have little to do with anything outside my presses these days, but if I can be of service, I will. Holmes withdrew a folded piece of paper from his pocket and laid it upon the counter.
+27:0627 minutes, 6 secondsIt was a sample of the Brazilian stationery taken from one of the poisoned letters carefully handled with gloves.
+27:1427 minutes, 14 seconds"Have you by any chance sold paper of this particular make in recent months?" Holmes asked. Merrick adjusted his
+27:2327 minutes, 23 secondsspectacles and examined the sample closely. After a moment, he let out a low whistle. I'll say this, Mr. Holmes, that is not a common paper stock.
+27:3327 minutes, 33 secondsCascadura Mill, Par Province. I have only had one customer request. Holmes's eyes brightened.
+27:4227 minutes, 42 secondsWhen was this? Two months passed near the end of January, Merrick replied. The gentleman was most particular. Came in
+27:5127 minutes, 51 secondswearing gloves and a scarf wrapped high around his face. Never removed them the whole time he was here. Did he give his
+27:5827 minutes, 58 secondsname? Holmes asked. "No, sir," Merrick said, shaking his head. "Paid in advance and insisted on cash, though, now that I
+28:0628 minutes, 6 secondsthink of it, the coins he gave me were foreign silver duckets, if I'm not mistaken. Eastern European, judging by the stamp." Holmes's expression grew
+28:1528 minutes, 15 secondseven more attentive. "What exactly did he order?" "A custom blend of paper stock, as you see there," Merrick said, tapping the sample with a bony finger.
+28:2728 minutes, 27 secondsand he asked for a batch of specialty ink as well. Wanted something with an iridescent quality. Said it needed to
+28:3428 minutes, 34 secondsremain wet and viscous longer than standard ink. Did you mix it for him yourself? Holmes asked. I did not, Merrick replied. I sent him to Mr.
+28:4528 minutes, 45 secondsKelllet at the Inkworks down on Peton Street. They handle custom pigments. Holmes made a note in his pocketbook.
+28:5328 minutes, 53 secondsand after that never saw him again.
+28:5728 minutes, 57 secondsMerrick said collected his order a week later and vanished. Left no address, no forwarding information. I did wonder at
+29:0529 minutes, 5 secondsthe time, but I assumed he was one of those eccentric artist types. Holmes smiled faintly. You have been most helpful, Mr. Merik. One final question.
+29:1629 minutes, 16 secondsDid he arrive on foot or by carriage? On foot, the printer said after a moment's thought. came from the direction of the Hullborn vioaduct and left the same way.
+29:2729 minutes, 27 secondsHolmes nodded, satisfied.
+29:3029 minutes, 30 seconds"Thank you." We stepped back into the street, where the morning fog still lingered in patches along the gutters.
+29:3829 minutes, 38 seconds"Holmes stood for a moment, gazing down toward Peton Street." "Our mysterious correspondent," he said at last, "is a
+29:4629 minutes, 46 secondsman who takes pains to obscure both his identity and his movements. foreign coin, foreign paper, and ink designed
+29:5529 minutes, 55 secondsfor both beauty and harm. But even the most careful criminal leaves traces, Watson.
+30:0230 minutes, 2 secondsHe turned, already striding briskly toward our next destination. Come, he said over his shoulder. Let us pay a
+30:0930 minutes, 9 secondsvisit to Mr. Kelllet. The ink may yet reveal the hand that mixed it. Chapter 7. A diplomatic connection.
+Chapter 8: A diplomatic connection
+30:2030 minutes, 20 secondsIt was nearing dusk when a familiar knock came at the sitting room door of Baker Street. Three sharp wraps followed
+30:2630 minutes, 26 secondsby a pause and a fourth precise unmistakable.
+30:3130 minutes, 31 secondsHolmes looked up from the array of notes spread across the table.
+30:3630 minutes, 36 secondsMicrooft, he said without turning his head, rather sooner than I expected.
+30:4230 minutes, 42 secondsMrs. Hudson entered with a faint frown carrying a silver tray upon which rested a sealed envelope.
+30:5030 minutes, 50 secondsFrom the Dioynes Club, Mr. Holmes, she said, the gentleman is downstairs and he asks whether you might spare him a few
+30:5630 minutes, 56 secondsmoments. Holmes took the envelope and broke the seal. After reading the brief note within, he stood and reached for
+31:0431 minutes, 4 secondshis coat. I must leave you briefly, Watson, he said. This summons cannot be ignored. I shall return within the hour.
+31:1231 minutes, 12 secondspossibly with fresh intelligence.
+31:1431 minutes, 14 seconds"From your brother?" I asked, rising. He gave a thin smile. "Yes, and if he is
+31:2231 minutes, 22 secondstaking the trouble to summon me in person, then the matter is not merely delicate, it is dangerous." With that he swept out into the growing gloom,
+31:3131 minutes, 31 secondsleaving me with the quiet hiss of the fire and a stack of ominous letters still resting on the table.
+31:3931 minutes, 39 secondsIt was well past 7 when Holmes returned, his step brisk and his face marked with grim concentration.
+31:4731 minutes, 47 secondsHe flung his gloves onto the sideboard and poured himself a measure of brandy before sinking into his chair. "My croft
+31:5631 minutes, 56 secondshas confirmed what I feared," he said. I leaned forward. "This is about the treaty, then precisely," Holmes replied.
+32:0632 minutes, 6 secondsThe Anglo-Uropean Peace Accord, which has occupied the better part of the Foreign Office for months, is now under direct threat. Several lastminute
+32:1532 minutes, 15 secondsamendments have created tensions among the negotiators.
+32:1932 minutes, 19 secondsBritish intelligence has intercepted whispers of dissent being fed to the press, not by rogue journalists or
+32:2632 minutes, 26 secondsdisgruntled staffers, but by agents working on behalf of a foreign power. I frowned.
+32:3332 minutes, 33 secondsYou suspect the same hand behind the poisoned letters? I do not merely suspect it, Holmes said.
+32:4132 minutes, 41 secondsI am now nearly certain of it. The timing of each scandal, the targeted delivery, the calculated nature of the ink, all point to a single conclusion.
+32:5232 minutes, 52 secondsSomeone is using London's press as a weapon to destabilize the diplomatic process. He rose and crossed to the
+33:0033 minuteswindow, gazing out into the lampllet street below. Microoft believes, he continued, that a certain figure
+33:0833 minutes, 8 secondsrecently arrived in London may be behind the scheme, a diplomat operating under the name Vladislav Petravvic, officially
+33:1733 minutes, 17 secondsattached to a minor Eastern European embassy, but long suspected of engaging in what is politely called unofficial influence. I recognize the name at once.
+33:2833 minutes, 28 secondsPetrovvic, the same who was expelled from Paris 3 years ago. Holmes nodded.
+33:3433 minutes, 34 secondsThe very one. In France, it was suspected he engineered the release of forged political letters which nearly
+33:4133 minutes, 41 secondsupended a ministerial election. In Berlin, he was linked to the theft of confidential military memorand.
+33:4933 minutes, 49 secondsBoth times he vanished before charges could be brought. Now he has appeared in London, attending salons and official
+33:5633 minutes, 56 secondsgatherings, keeping just within the bounds of diplomatic immunity.
+34:0234 minutes, 2 secondsAnd Microoft believes he is involved here.
+34:0634 minutes, 6 secondsHe would not say it outright, Holmes replied, but he all but placed the name in my mouth. The truth is Petravich has
+34:1434 minutes, 14 secondsboth the motive and the temperament. He views political negotiation as a chess board and the press as his rooks and
+34:2234 minutes, 22 secondsbishops. Holmes returned to the table and began flipping through the letters once more, examining them with fresh
+34:2934 minutes, 29 secondseyes. There is something deliberate in the tone of these messages, he said.
+34:3434 minutes, 34 secondsEach one not only forecasts scandal, but seems designed to erode public trust in authority. ministers disgraced, policies
+34:4334 minutes, 43 secondsquestioned, alliances fractured, and now the letter predicting that trust will be broken before the treaty is signed. I considered the implications in silence.
+34:5534 minutes, 55 secondsWhat do we do? I asked at last. Holmes tapped a finger against the edge of a letter. We find Petravvic. We observe
+35:0435 minutes, 4 secondshim, and we determine whether he is merely a guest at the diplomatic table or the man poisoning the ink behind the scenes.
+35:1235 minutes, 12 secondsHe stood and reached for his coat once more. "Tomorrow evening, Watson," he said, "we attend the ambassador's reception at Belgrave House. Petravvic
+35:2235 minutes, 22 secondswill be there, and if my instincts are correct, so too will the next move in his game."
+Chapter 9: The decoy letter
+35:2835 minutes, 28 secondsChapter 8. the decoy letter. The next morning, Holmes appeared more animated than I had seen him in days.
+35:3835 minutes, 38 secondsHe stood at the mantlepiece with a sheath of paper in one hand and a bottle of ink in the other, speaking quickly and with purpose.
+35:4735 minutes, 47 secondsWe shall give our adversary an opportunity to reveal himself, Watson, he said. Thus far he has controlled the flow of information.
+35:5635 minutes, 56 secondsToday we shift the balance. I looked up from my chair where I'd been reading over notes from our Fleet Street observations. "You mean to bait him?"
+36:0536 minutes, 5 seconds"Precisely," Holmes replied. "A false letter written in the same theatrical hand on the same type of imported
+36:1336 minutes, 13 secondsBrazilian paper. The only difference is that this one shall contain nothing of value and none of the venomous ink. a
+36:2236 minutes, 22 secondsharmless forgery, but planted where the original letters have done the most damage. He sat at the writing table and
+36:3036 minutes, 30 secondsbegan composing the counterfeit letter, carefully mimicking the exaggerated loops and rigid slant of the original
+36:3736 minutes, 37 secondshandwriting. The message was vague, a suggestion of an impending scandal involving a highranking trade official
+36:4436 minutes, 44 secondsand a supposed scheme to divert funds to a private company. Convincing enough to tempt interference, Holmes muttered, but false enough to expose the medddler.
+36:5736 minutes, 57 secondsOnce the letter was sealed and dried, Holmes wrapped it in a plain envelope and handed it to me.
+37:0437 minutes, 4 secondsTo the London Gazette, Watson, ensure it is delivered into their general correspondence box before midafter afternoon. Then we shall return at dusk.
+37:1437 minutes, 14 secondsThat evening, we took our positions in a narrow corridor overlooking the gazette's main editorial room. Holmes
+37:2237 minutes, 22 secondshad arranged with Mr. Littton to give us discrete access to an unused loft space above the offices. Through a ventilation
+37:3037 minutes, 30 secondsgrill, we could observe the room below without being seen. The room was mostly quiet at that hour. The senior staff had
+37:3937 minutes, 39 secondsleft for the day, and only a few clerks remained tidying desks and gathering correspondents.
+37:4637 minutes, 46 secondsAmong them was a young man we had noticed during an earlier visit, a slight fellow with thinning hair and an
+37:5337 minutes, 53 secondsanxious manner. His name, Littton had told us, was Percy Lang, a junior cler responsible for handling and sorting
+38:0238 minutes, 2 secondsincoming letters. Holmes's eyes were fixed on Lang.
+38:0838 minutes, 8 secondsThere," he whispered, as the cler approached the table where the decoy letter had been placed that morning.
+38:1538 minutes, 15 secondsLang glanced over his shoulder before lifting the envelope. He turned it in his hands, examined the handwriting, and
+38:2338 minutes, 23 secondsthen, after another fertive look, slipped it into his coat pocket rather than the appropriate sorting tray.
+38:3038 minutes, 30 secondsHolmes's mouth curved into a thin smile.
+38:3438 minutes, 34 secondsPatience, Watson, he said softly. Let us allow him to act on his instructions.
+38:4138 minutes, 41 secondsWe waited another quarter hour as Lang lingered around the room, pretending to busy himself with meaningless tasks. At
+38:4838 minutes, 48 secondslast he left, descending the stairs toward the side exit. Within moments Holmes had moved. We descended from our
+38:5638 minutes, 56 secondsperch and emerged into the alley behind the building just as Lang exited into the evening fog.
+39:0339 minutes, 3 secondsHolmes stepped into his path. Good evening, Mr. Lang. The young man froze, his face draining of color. I I beg your
+39:1339 minutes, 13 secondspardon. Holmes gave no introduction. You have something in your coat pocket that does not belong to you. Lang looked
+39:2239 minutes, 22 secondsbetween us, then made a sudden turn as if to flee.
+39:2739 minutes, 27 secondsHolmes caught him by the arm with a grip like steel.
+39:3239 minutes, 32 secondsI would not recommend that," he said coolly. "A scuffle was unnecessary."
+39:3939 minutes, 39 secondsLang, trembling now, was quickly subdued, and ushered back into the gazette offices, where Mr. Littton,
+39:4539 minutes, 45 secondssummoned by telegram in advance, had set aside a private room for questioning. "I am not a thief," Lang said as soon as we
+39:5439 minutes, 54 secondsseated him. "I did not mean any harm." No harm, Holmes said, placing the
+40:0040 minutesunopened envelope on the table. Yet you removed private correspondence and attempted to conceal it. Start with the
+40:0840 minutes, 8 secondstruth, Mr. Lang, who instructed you to interfere with the letters. Langs composure broke.
+40:1640 minutes, 16 secondsHe said it was only for a few weeks, he blurted. He promised nothing would happen to anyone.
+40:2240 minutes, 22 secondsonly that I should watch the editor's correspondence, and if any strange letters arrived with that odd-looking ink, I was to inform him at once.
+40:3240 minutes, 32 seconds"Who is he?" Holmes asked. Lang hesitated.
+40:3740 minutes, 37 seconds"I do not know his real name. He came to me outside my boarding house 3 weeks ago. Said he knew about my father's debt
+40:4640 minutes, 46 secondsat the betting house. Said he could make it disappear if I cooperated." Holmes's voice was low and steady.
+40:5440 minutes, 54 secondsAnd did he? Lang nodded miserably.
+40:5840 minutes, 58 secondsThe debt vanished. The bookmaker said it had been paid in full. Since then I have been passing along details. Where the
+41:0641 minutes, 6 secondseditors sit, who sorts the mail, which messengers come and go. Did you ever see his face clearly? I asked. Only once,
+41:1541 minutes, 15 secondsLang said. He wore gloves and a hat most of the time, but one evening he removed it while speaking to me. He had a scar
+41:2341 minutes, 23 secondsjust above his left eyebrow, thin and pale, but deep.
+41:2941 minutes, 29 secondsHolmes exchanged a glance with me. Then he turned back to Lang. "You will write
+41:3641 minutes, 36 secondsa full account, and you will do so honestly," he said. "Mr. Litten will ensure you are protected from
+41:4341 minutes, 43 secondsretaliation, but if you hold anything back, I shall know, and the consequences will no longer be in your favor." Lang nodded quickly.
+41:5441 minutes, 54 secondsHolmes rose and gathered his coat. "We are close now, Watson," he said once we were alone again. "Too close for our
+42:0242 minutes, 2 secondsopponent's comfort. He has begun to use pawns, and pawns are fragile things. When they break, they often speak.
+Chapter 10: The masked scribe
+42:1142 minutes, 11 secondsChapter nine. The Masked Scribe. It was a bleak, windswept evening when Percy Lang led us down Greymire Lane, a
+42:2042 minutes, 20 secondsneglected stretch of alley near the river, flanked on both sides by crumbling brick buildings and empty gas
+42:2742 minutes, 27 secondslamps. The fog rolled low and thick across the cobbles, muffling the echo of our footsteps as we approached a
+42:3542 minutes, 35 secondsshuttered boarding house with peeling green paint and a tilted sign that read Langley House weekly rooms. This is it,
+42:4542 minutes, 45 secondsLang whispered, glancing nervously over his shoulder. He rented the top floor two weeks ago under the name Mr. Reed,
+42:5242 minutes, 52 secondsbut I once heard someone call him Veric when they thought I was out of earshot.
+42:5842 minutes, 58 secondsHolmes gave a slight nod. You have done well, Mr. Lang. Now remain outside. If you see anyone approach the building,
+43:0643 minutes, 6 secondssignal twice. Lang backed into the mist, his shoulders hunched and pale face
+43:1243 minutes, 12 secondsbarely visible. Holmes turned to me. Our masked scribe keeps a nest here, he
+43:1843 minutes, 18 secondsmurmured. Let us see what birds he's been hatching. With Holmes in the lead, we ascended the narrow stairwell. each
+43:2643 minutes, 26 secondsstep creaking under our weight. At the top, the hallway was lined with cracked plaster and faded wallpaper.
+43:3543 minutes, 35 secondsHolmes gestured toward the last door on the right. A faint chemical tang hung in the air. He produced a set of slender tools and worked the lock quietly.
+43:4743 minutes, 47 secondsWithin moments, the latch clicked open, and we slipped inside. The room was dim, lit only by a half-covered oil lamp on a
+43:5643 minutes, 56 secondssmall desk near the far wall. The air was close and stale, tinged with the distinct odor of ink, scorched metal,
+44:0544 minutes, 5 secondsand something bitterly medicinal. The space was modest, but meticulously arranged. A writing table sat against
+44:1344 minutes, 13 secondsthe wall covered in sheav of parchment cutings from newspapers and small bottles containing residues of
+44:2144 minutes, 21 secondsiridescent ink. A leather valise stood open on the bed revealing foreign documents, waxsealed envelopes, and a
+44:3044 minutes, 30 secondsnumber of officiallooking papers bearing the crests of various ministries. Holmes moved swiftly and silently, rifling
+44:3844 minutes, 38 secondsthrough the contents with clinical precision. Government memos, he muttered, holding up a page
+44:4544 minutes, 45 secondsmarked confidential office of naval procurement.
+44:5044 minutes, 50 secondsAnd here, foreign office dispatches from Vienna. These were never intended for public view. I picked up a folded sheet
+44:5844 minutes, 58 secondsnear the desk. This one bears the signature of Under Secretary Moffett.
+45:0245 minutes, 2 secondsStolen or purchased, Holmes, said grimly. Either way, these are the sources from which he constructed his letters.
+45:1145 minutes, 11 secondsHolmes moved to the corner where an old coat rack bore a widebrimmed hat and a heavy dark overcoat. He examined the
+45:1945 minutes, 19 secondslapel, then withdrew a small folding mirror from his pocket and angled it beneath the brim. A faint powder, he
+45:2845 minutes, 28 secondssaid, likely to neutralize exposure from the ink's toxins. Our man is no fool.
+45:3545 minutes, 35 secondsSuddenly, Holmes froze.
+45:3945 minutes, 39 secondsFrom the stairwell below came a sound, the squeal of the front door hinges, followed by deliberate slow steps ascending the staircase.
+45:4845 minutes, 48 secondsHolmes blew out the lamp and motioned for silence.
+45:5245 minutes, 52 secondsWe moved swiftly into the darkness, pressing ourselves against either side of the doorframe. The footsteps paused
+45:5945 minutes, 59 secondsoutside the flat. Keys jangled softly, then turned in the lock.
+46:0646 minutes, 6 secondsThe door opened. A man entered tall and thin, his shoulders cloaked in shadow.
+46:1246 minutes, 12 secondsHis face was sharp with a well-groomed beard and a high forehead. As he stepped into the room, he closed the door behind
+46:2146 minutes, 21 secondshim and crossed to the desk, unaware of our presence. Holmes moved first. With a
+46:2846 minutes, 28 secondsswift motion, he stepped forward and brought the point of his cane sharply across the man's wrist. The intruder
+46:3646 minutes, 36 secondscried out, dropping the sheath of letters he had picked up. I leapt from my post, locking the door behind us.
+46:4446 minutes, 44 seconds"Good evening, Mr. Verk," Holmes said calmly. "Or should I call you by your given name, Radoslav Verk, former atache
+46:5446 minutes, 54 secondsto the Balkan Legation and currently a fugitive in two countries?" Veric's expression flickered only
+47:0147 minutes, 1 secondbriefly before settling into a cold smile.
+47:0547 minutes, 5 secondsSo he said in flawless English, the younger Holmes come sniffing after shadows. I had expected Microoft.
+47:1447 minutes, 14 secondsHolmes kept his tone even.
+47:1847 minutes, 18 secondsMoft prefers diplomacy. I favor resolution. Veric slowly straightened.
+47:2547 minutes, 25 secondsYou have no warrant, no charges.
+47:2847 minutes, 28 secondsThis is sovereign ground as far as your laws are concerned. But your methods are not, Holmes said. Stolen documents,
+47:3647 minutes, 36 secondsbribed officials, chemical weapons disguised as ink. You sought to destabilize the treaty by igniting London's press. It was clever, but it
+47:4547 minutes, 45 secondsends here. Veric's eyes flashed. You cannot stop the truth, Mr. Holmes. The scandals were real. I merely revealed what your own government tried to bury.
+47:5847 minutes, 58 secondsIndeed, Holmes replied, "But you timed your revelations with surgical precision, not for truth's sake, but to destroy negotiations.
+48:0848 minutes, 8 secondsThat makes you not a journalist, but a sabotur." "I noticed then that Veric's hand had slipped toward the coat on the rack.
+48:1848 minutes, 18 secondsHolmes saw it, too." Do not reach for the coat, Holmes said coolly. Unless you wish to find out whether I carry a pistol. I do not, but Watson does.
+48:3148 minutes, 31 secondsReluctantly, Veric stepped away. Holmes gathered the letters and placed them into his satchel along with the bottles of ink and the foreign documents.
+48:4248 minutes, 42 seconds"You will not get far," Veric said quietly. "There are others like me, and they are already in position. Perhaps,
+48:5048 minutes, 50 secondsHolmes replied, but tonight they are one man fewer. Within the hour, Veric was escorted into the custody of military
+48:5948 minutes, 59 secondsintelligence, summoned by Holmes via special courier. Microoft himself would see to the arrangements, for this case,
+49:0749 minutes, 7 secondsas Holmes had predicted, had reached beyond Baker Street and into the corridors of international power. As we
+49:1449 minutes, 14 secondswalked back through the fog reathed streets toward home, Holmes said nothing for some time. Then at last, he
+49:2249 minutes, 22 secondsmurmured, "Truth is rarely pure, Watson, and never simple, but the manipulation of truth, that is the greater crime."
+49:3249 minutes, 32 secondsAnd with that he disappeared once more into the swirling London mist. Chapter
+Chapter 11: The final letter
+49:3849 minutes, 38 seconds10. The final letter. It was not yet dawn when Holmes burst into our sitting
+49:4549 minutes, 45 secondsroom, the folds of his coat trailing behind him like a tattered banner. His eyes were bright, alert, and tinged with urgency.
+49:5549 minutes, 55 secondsHe carried no satchel, no fresh documents, only a small crumpled telegram in his gloved hand.
+50:0350 minutes, 3 seconds"The game is not over," he said flatly.
+50:0750 minutes, 7 seconds"I sat upright at once." Veric detained, Holmes replied, but not
+50:1550 minutes, 15 secondsbefore he dispatched a final letter, one I failed to anticipate. I stood to whom?
+50:2250 minutes, 22 secondsHe held up the telegram. To the right honorable Edmund Willoughby, Secretary of State for Foreign Affairs.
+50:2950 minutes, 29 secondsMy heart sank.
+50:3250 minutes, 32 secondsIf he opens it, Holmes, cut me off. It will not kill him, but the contents will do worse. According to what we found in
+50:4050 minutes, 40 secondsVeric's quarters, the letter contains fabricated correspondence implicating Willoughby in secret dealings with a
+50:4750 minutes, 47 secondsforeign bank. Letters forged with stolen signatures and real documents modified just enough to seem damning. A scandal
+50:5650 minutes, 56 secondsof that magnitude would collapse the treaty and bring down half the cabinet, Holmes said grimly. The foreign
+51:0451 minutes, 4 secondssecretary would have no choice but to resign under suspicion. The press would have a field day, and the trust built over months of negotiation would unravel overnight.
+51:1551 minutes, 15 secondsHe threw on his scarf and turned toward the door.
+51:1951 minutes, 19 secondsWe have less than an hour before the foreign secretary's first appointment.
+51:2351 minutes, 23 secondsIf he checks his post early, as he is won't to do, the damage will be done.
+51:2951 minutes, 29 seconds"Then we must reach him first," I said, grabbing my coat. We hurried down Baker Street, then through the silent avenues
+51:3751 minutes, 37 secondsof Mayfair, the early morning fog curling along the ground like a living thing. No handsome cab could move faster than Holmes's long strides that morning.
+51:4851 minutes, 48 secondsWe reached Carlton House Terrace, where the foreign office maintained its private residence just as the gas lamps were beginning to sputter into daylight.
+51:5751 minutes, 57 secondsA footman stood outside the gate, adjusting the collar of his uniform. Holmes stroed directly up to him.
+52:0652 minutes, 6 seconds"Mr. Sherlock Holmes, here by order of military intelligence," he said. "We must see the foreign secretary at once.
+52:1452 minutes, 14 secondsA matter of national urgency." The footman hesitated, confused by the sudden arrival. "He has just risen, sir.
+52:2252 minutes, 22 secondsHe usually reviews his correspondence during breakfast." "Then we are already late," Holmes muttered, pushing past
+52:2952 minutes, 29 secondshim. We were shown to the morning room where Edmund Willoughby, a dignified man with gray side whiskers and a
+52:3752 minutes, 37 secondsperpetually weary expression, sat with a silver tray of toast, tea, and a neatly stacked pile of unopened correspondence
+52:4652 minutes, 46 secondsat his side. He looked up in mild surprise. Mr. Holmes, I was not expecting a visit at this hour. Holmes made no effort to sit.
+52:5652 minutes, 56 secondsYou have received a letter this morning.
+52:5952 minutes, 59 secondsNo return address, heavy paper, faint metallic sheen in the ink. Willoughby, slightly alarmed, turned to the stack.
+53:0853 minutes, 8 secondsWhy, yes, I noticed the odd texture. It is here. He reached for the envelope.
+53:1453 minutes, 14 secondsHolmes lunged forward. Do not touch it, he snapped. The ink is laced with a chemical compound that causes blistering
+53:2253 minutes, 22 secondsburns. We've seen three editors injured already.
+53:2653 minutes, 26 secondsWilloughy's hand froze an inch from the envelope. "Good Lord," he said quietly,
+53:3253 minutes, 32 secondswithdrawing. "And the contents? Forged documents designed to implicate you in financial impropriy," Holmes replied.
+53:4153 minutes, 41 seconds"The forgery is detailed, but ultimately traceable. It is meant to destroy your credibility and collapse the treaty negotiations."
+53:5053 minutes, 50 secondsWilloughy's face pald as he reached for a pair of tongs and lifted the envelope into a porcelain basin used for ash.
+53:5853 minutes, 58 secondsThis is Veric's work. Holmes gave a sharp nod.
+54:0354 minutes, 3 secondsThe final blow in a series of calculated disclosures, all part of an effort to unseat the British delegation from within.
+54:1254 minutes, 12 secondsWilloughby turned to the butler at the door.
+54:1554 minutes, 15 secondsSend a man to General Whittington's office. Tell him Veric's communication has been intercepted, and Mr. Holmes is to be given full access to the
+54:2354 minutes, 23 secondsdocuments. As the butler departed, Willoughby returned his gaze to Holmes.
+54:2954 minutes, 29 secondsYou have spared this government a profound humiliation, and perhaps more importantly, you have preserved a
+54:3554 minutes, 35 secondsfragile piece. Holmes merely inclined his head. Truth can withstand time and scrutiny, but it cannot survive the
+54:4454 minutes, 44 secondsflames of deliberate distortion. We left Carlton House Terrace as the sun finally broke through the mist, warming the damp
+54:5254 minutes, 52 secondspavement underfoot. Holmes walked in silence for some time, his gaze distant, the collar of his coat turned against the breeze.
+55:0255 minutes, 2 seconds"You look dissatisfied," I remarked.
+55:0555 minutes, 5 seconds"Not dissatisfied," he said at last, merely aware that for every veric exposed, there may be
+55:1155 minutes, 11 secondsanother in his place already writing the next letter. And yet, I said, this one was stopped.
+55:1955 minutes, 19 secondsHolmes offered a faint smile. For now, Watson, for now. Chapter 11. Ink and Influence.
+Chapter 12: Ink and influence
+55:2955 minutes, 29 seconds3 days had passed since the letter intended for the foreign secretary was safely intercepted.
+55:3555 minutes, 35 secondsThanks to Holmes's swift intervention, the letter became a piece of evidence rather than a weapon.
+55:4255 minutes, 42 secondsIts exposure unraveled the final thread of the conspiracy. Radislav Verk, now identified and detained under the
+55:5055 minutes, 50 secondsOfficial Secrets Act, was turned over to British intelligence and interrogated in a secure compound outside London. He
+55:5855 minutes, 58 secondsnever denied authorship of the letters, nor the forgeries, nor the toxins. In fact, according to Microoft Holmes, who
+56:0656 minutes, 6 secondsoversaw parts of the inquiry, Veric seemed almost pleased with his capture, like a playwright whose final act had
+56:1256 minutes, 12 secondsreceived the attention it deserved. His crime, Microoft later said, was not against any individual, but against the
+56:2056 minutes, 20 secondsvery notion of objective truth. When pressed on his motivation, Veric offered a single measured response. The truth left unguarded becomes a lie in waiting.
+56:3356 minutes, 33 secondsThe government kept the matter classified. Only a carefully worded statement was released to the public citing foreign interference in
+56:4156 minutes, 41 secondsconfidential communications and the prevention of a severe diplomatic rupture. No trials, no names, quiet
+56:5156 minutes, 51 secondsresolution in the interest of national stability.
+56:5456 minutes, 54 secondsHolmes, however, did not let the story rest. You recall, he said to me one afternoon as we sat in our rooms at Baker Street. The name Petravvic.
+57:0557 minutes, 5 secondsOf course, I replied. You suspected he was involved.
+57:1057 minutes, 10 secondsHe was, Holmes confirmed. Petravvic is Veric's cousin, not by blood, but by allegiance. Petravvic once served in the
+57:1857 minutes, 18 secondsEastern Intelligence Division of his country's internal ministry. Veric's actions were not those of a lone sabotur. He was the instrument.
+57:2857 minutes, 28 secondsPetravvic was the composer. Then why was Petravich not arrested? I said. Holmes gave a thin smile. Diplomatic immunity.
+57:3757 minutes, 37 secondsThe crown is not in the habit of sparking wars over shadows and ink. He walked to the fireplace where the day's post lay unopened.
+57:4857 minutes, 48 secondsBut the message was received, Watson.
+57:5057 minutes, 50 secondsThe treaty held. The scandal was undone before it could erupt. Veric's plot failed. And yet, I said, he seemed
+58:0058 minutescontent in defeat. Holmes nodded slowly because he believed in the fragility of perception. His goal was never simply to
+58:0958 minutes, 9 secondsdestroy careers. It was to show how easily public trust can be turned into a weapon. That poison can be poured not
+58:1758 minutes, 17 secondsinto a chalice, but into a headline. He paused, lifting a folded newspaper.
+58:2458 minutes, 24 secondsHe used truth like a skeleton and lies as its flesh. And in a world as hungry for information as ours, that is a dangerously effective formula.
+58:3558 minutes, 35 secondsAs the fire crackled, I returned to my notebook and began to write the final lines of the case. Radoslav Verk had
+58:4258 minutes, 42 secondsauthored no death, spilled no blood, fired no shot. Yet his scheme nearly reshaped the political architecture of Europe, all with words, all with ink.
+58:5658 minutes, 56 secondsThe true mystery was not how he forged the letters, but how close the world came to believing them. And in that
+59:0459 minutes, 4 secondsrealization lay Holmes's greatest triumph, not in discovering who had written the poisoned letters, but in reminding us all that even in an age of
+59:1259 minutes, 12 secondsheadlines and telegrams, the sharpest blade remains the unseen hand behind the
+59:1959 minutes, 19 secondspage. And so concludes the puzzle of the poisoned ink. A tale where no one died, yet entire governments nearly fell. Not
+59:2859 minutes, 28 secondsby blade or bullet, but by the quiet violence of a well-placed lie. Once again, Sherlock Holmes has proven that
+59:3659 minutes, 36 secondsthe sharpest tool in his arsenal is not force, but reason. That in a world increasingly shaped by words, it is our
+59:4559 minutes, 45 secondsability to see through illusion that protects us most. Until next time, keep your eyes open, your thoughts clear, and beware the ink that burns.
+
